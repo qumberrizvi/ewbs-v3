@@ -1,63 +1,78 @@
+import { Metadata } from "next";
 import Wrapper from "@/layout/wrapper";
-import HeaderOne from "@/layout/header/header-one";
-import HeroBannerOne from "@/components/hero-banner/hero-banner-one";
-import TextFeatureTwo from "@/components/text-feature/text-feature-two";
-import BlockFeatureFour from "@/components/block-feature/block-feature-four";
-import TextFeatureThree from "@/components/text-feature/text-feature-three";
-import BlockFeatureFive from "@/components/block-feature/block-feature-five";
-import FeedbackTwo from "@/components/feedback/feedback-two";
-import FaqSectionTwo from "@/components/faq/faq-section-two";
-import HomeBlogs from "@/components/blogs/home-blogs";
-import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
-import FooterTwo from "@/layout/footer/footer-two";
+import HeaderTwo from "@/layout/header/header-two";
+import HeroBannerTwo from "@/components/hero-banner/hero-banner-two";
+import FancyBannerOne from "@/components/fancy-banner/fancy-banner-one";
+import BlockFeatureOne from "@/components/block-feature/block-feature-one";
+import TextFeatureOne from "@/components/text-feature/text-feature-one";
+import BlockFeatureTwo from "@/components/block-feature/block-feature-two";
+import BlockFeatureThree from "@/components/block-feature/block-feature-three";
+import FeedbackOne from "@/components/feedback/feedback-one";
+import TeamSectionOne from "@/components/team/team-section-one";
+import FaqSectionOne from "@/components/faq/faq-section-one";
+import HomeTwoBlogs from "@/components/blogs/home-2-blogs";
+import FancyBannerTwo from "@/components/fancy-banner/fancy-banner-two";
+import FooterOne from "@/layout/footer/footer-one";
 
-export default function HomePage() {
+export const metadata: Metadata = {
+  title: "Experience Excellence in Business Setup with EWBS in Dubai",
+};
+
+export default function HomePageTwo() {
   return (
     <Wrapper>
       <div className="main-page-wrapper">
         {/* header start */}
-        <HeaderOne />
+        <HeaderTwo />
         {/* header end */}
         <main>
           {/* hero banner start */}
-          <HeroBannerOne />
+          <HeroBannerTwo />
           {/* hero banner end */}
 
-          {/* text feature start */}
-          <TextFeatureTwo />
-          {/* text feature end */}
+          {/* fancy banner one start */}
+          <FancyBannerOne />
+          {/* fancy banner one end */}
 
-          {/* block feature four start */}
-          <BlockFeatureFour />
-          {/* block feature four end */}
+          {/* block feature one start */}
+          <BlockFeatureOne />
+          {/* block feature one end */}
 
-          {/* text feature start */}
-          <TextFeatureThree />
-          {/* text feature end */}
+          {/* text feature one start */}
+          <TextFeatureOne />
+          {/* text feature one end */}
 
-          {/* block feature five start */}
-          <BlockFeatureFive />
-          {/* block feature five end */}
+          {/* block feature two start */}
+          <BlockFeatureTwo />
+          {/* block feature two end */}
 
-          {/* feedback two start */}
-          <FeedbackTwo/>
-          {/* feedback two end */}
+          {/* block feature three start */}
+          <BlockFeatureThree />
+          {/* block feature three end */}
 
-          {/* project faq area start */}
-          <FaqSectionTwo/>
-          {/* project faq area end */}
+          {/* feedback one start */}
+          <FeedbackOne />
+          {/* feedback one end */}
+
+          {/* team section one start */}
+          <TeamSectionOne />
+          {/* team section one end */}
+
+          {/* faq section start */}
+          <FaqSectionOne />
+          {/* faq section end */}
 
           {/* blog item start */}
-          <HomeBlogs/>
+          <HomeTwoBlogs />
           {/* blog item end */}
 
-          {/* fancy banner three start */}
-          <FancyBannerThree/>
-          {/* fancy banner three end */}
+          {/* fancy banner two start */}
+          <FancyBannerTwo />
+          {/* fancy banner two end */}
         </main>
 
         {/* footer start */}
-        <FooterTwo/>
+        <FooterOne/>
         {/* footer end */}
       </div>
     </Wrapper>

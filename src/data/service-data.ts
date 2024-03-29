@@ -67,23 +67,23 @@ const service_data:IService[] = [
   {
     id:5,
     icon:icon_5,
-    title:'Expense Report',
-    desc:'Maximize convenience by paying for ads, subscriptions, and inventory with Mastercard®.',
-    page:'home-2'
+    title:'Business Setup',
+    desc:'Comprehensive business setup solutions tailored to suit both Freezone and Mainland requirements.',
+    page:'home-main'
   },
   {
     id:6,
     icon:icon_6,
-    title:'Book keeping',
-    desc:'Use receiving accounts in a growing number of currencies and get paid like a local.',
-    page:'home-2'
+    title:'VAT Registration and Filing',
+    desc:'End-to-end solutions, including VAT registration, compliance, reporting, and filing.',
+    page:'home-main'
   },
   {
     id:7,
     icon:icon_7,
-    title:'Tax Preparation',
-    desc:'Use receiving accounts in a growing number of currencies and get paid like a local.',
-    page:'home-2'
+    title:'IT & Digital Marketing',
+    desc:'Range of solutions including website development, digital marketing, SEO, and social media marketing.',
+    page:'home-main'
   },
   // home 3
   {

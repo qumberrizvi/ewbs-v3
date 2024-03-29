@@ -14,7 +14,7 @@ const FancyBannerOne = () => {
         <div className="col-md-6">
           <div className="ps-xl-5 ps-md-4 pe-xxl-5 d-flex align-items-center justify-content-between">
             <div>
-              <h3 className="fw-bold">1.75 million+</h3>
+              <h3 className="fw-bold">15 thousands+</h3>
               <p className="text-md m0">Worldwide clients</p>
             </div>
             <Image

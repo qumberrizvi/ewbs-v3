@@ -40,14 +40,14 @@ const ContactArea = () => {
                   <AddressBlock
                     icon={icon_1}
                     title="Our Address"
-                    subtitle="1012 Pebda Parkway, Mirpur 2 <br/>Dhaka, Bangladesh"
+                    subtitle="Office 903, 9th floor, Aspin Commercial Tower, Shaikh Zayed Road, Dubai, UAE"
                   />
                 </div>
                 <div className="col-md-4">
                   <AddressBlock
                     icon={icon_2}
                     title="Contact Info"
-                    subtitle='Open a chat or give us call at <br/><a href="tel:310.841.5500" className="call text-lg fw-500">310.841.5500</a>'
+                    subtitle='Open a chat or give us call at <br/><a href="tel:+971 42 559 901" className="call text-lg fw-500">+971 42 559 901</a>'
                   />
                 </div>
                 <div className="col-md-4">
