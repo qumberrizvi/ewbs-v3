@@ -60,7 +60,7 @@ const FooterTwo = () => {
               </ul>
             </div>
           </div>
-          <div className="copyright text-center">Copyright @{new Date().getFullYear()} babun inc.</div>
+          <div className="copyright text-center">Copyright @{new Date().getFullYear()} EWBS Excellence Business Services LLC.</div>
         </div>
         <Image src={shape} alt="shape" className="lazy-img shapes shape_01"/>
         <Image src={shape} alt="shape" className="lazy-img shapes shape_02"/>

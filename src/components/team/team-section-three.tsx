@@ -13,7 +13,7 @@ const imgStyle = {
 }
 
 const TeamSectionThree = ({ style_2 = false }: { style_2?: boolean }) => {
-  const teams = team_data.filter((t) => t.page === "team-three");
+  const teams = team_data.filter((t) => ["home"].includes(t.page));
   return (
     <>
       {!style_2 && (
@@ -37,7 +37,7 @@ const TeamSectionThree = ({ style_2 = false }: { style_2?: boolean }) => {
               </div>
 
               <div className="section-btn sm-mt-40">
-                <Link href="/team-v2" className="btn-five icon-link">
+                <Link href="/team" className="btn-five icon-link">
                   <span className="text">See all Experts</span>
                   <div className="icon tran3s rounded-circle d-flex align-items-center justify-content-center">
                     <i className="bi bi-arrow-up-right"></i>

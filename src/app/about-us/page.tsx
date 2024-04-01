@@ -4,7 +4,7 @@ import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/header/header-two";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import FooterThree from "@/layout/footer/footer-three";
-import about_bg from "@/assets/images/media/img_26.jpg";
+import about_bg from "@/assets/images/media/about-banner.png";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import shape from "@/assets/images/shape/shape_25.svg";
 import TextFeatureOne from "@/components/text-feature/text-feature-one";
@@ -17,7 +17,7 @@ import HomeFourBlogs from "@/components/blogs/home-4-blogs";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 
 export const metadata: Metadata = {
-  title: "About Us Page",
+  title: "About Us - EWBS",
 };
 
 const AboutUsPage = () => {
@@ -30,8 +30,8 @@ const AboutUsPage = () => {
         <main>
           {/* breadcrumb start */}
           <BreadcrumbOne
-            title="We’r top rated company"
-            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+            title="We’re top rated company"
+            subtitle="Say Goodbye to Business Setup Hassles. We Make Business Incorporation with Ease! #ewbsbusiness"
             page="About Us"
             bg_img={about_bg}
             shape={shape}

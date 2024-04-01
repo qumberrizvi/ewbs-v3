@@ -82,7 +82,7 @@ const FooterFour = () => {
           </div>
           <div className="col-xl-4 col-lg-3 order-lg-1 mb-15">
             <div className="copyright text-center text-lg-start order-lg-first">
-              Copyright @{new Date().getFullYear()} babun inc.
+              Copyright @{new Date().getFullYear()} EWBS Excellence Business Services LLC.
             </div>
           </div>
         </div>

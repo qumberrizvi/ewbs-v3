@@ -1,13 +1,12 @@
 import { ITeam } from "@/types/team-d-t";
-import team_1 from "@/assets/images/media/img_09.jpg";
-import team_2 from "@/assets/images/media/img_10.jpg";
-import team_3 from "@/assets/images/media/img_11.jpg";
-import team_4 from "@/assets/images/media/img_12.jpg";
-// team 2
-import team_5 from "@/assets/images/media/img_22.jpg";
-import team_6 from "@/assets/images/media/img_23.jpg";
-import team_7 from "@/assets/images/media/img_24.jpg";
-import team_8 from "@/assets/images/media/img_25.jpg";
+import jasim from "@/assets/images/media/jassim.jpeg";
+import ashar from "@/assets/images/media/ashar.jpeg";
+import renu from "@/assets/images/media/renu.jpeg";
+import arsalan from "@/assets/images/media/arsalan.jpeg";
+import djamel from "@/assets/images/media/djamel.jpeg";
+import iqra from "@/assets/images/media/iqra.jpeg";
+import diana from "@/assets/images/media/diana.jpeg";
+import nihal from "@/assets/images/media/nihal.jpeg";
 // team 3
 import team_9 from "@/assets/images/media/img_27.jpg";
 import team_10 from "@/assets/images/media/img_28.jpg";
@@ -22,119 +21,117 @@ import team_16 from "@/assets/images/media/img_41.jpg";
 const team_data: ITeam[] = [
   {
     id: 1,
-    img: team_1,
-    name: "John Smith",
-    designation: "Manager",
+    img: djamel,
+    name: "Djamel Eddine",
+    designation: "Senior Business Consultant",
     page: "home",
   },
   {
     id: 2,
-    img: team_2,
-    name: "Rylan Blackthorn",
-    designation: "Marketing Expert",
+    img: ashar,
+    name: "Ashar Mazhar",
+    designation: "Business Consultant",
     page: "home",
   },
   {
     id: 3,
-    img: team_3,
-    name: "Mark Smith",
-    designation: "Analysis",
+    img: renu,
+    name: "Renu Gilhotra",
+    designation: "Business Consultant",
     page: "home",
   },
   {
     id: 4,
-    img: team_4,
-    name: "Maria Escolova",
-    designation: "Senior Officer",
+    img: arsalan,
+    name: "Arslan Rashid",
+    designation: "Business Consultant",
     page: "home",
   },
-  // home 5
   {
     id: 5,
-    img: team_5,
-    name: "Stormrider",
-    designation: "Owner & Founder",
-    page: "home-5",
+    img: jasim,
+    name: "Jasim Muhammad Fiaz",
+    designation: "Business Consultant",
+    page: "any",
   },
   {
     id: 6,
-    img: team_6,
-    name: "Frostfall",
-    designation: "Project Manager",
-    page: "home-5",
+    img: iqra,
+    name: "Iqra Jassim",
+    designation: "Business Consultant",
+    page: "any",
   },
   {
     id: 7,
-    img: team_7,
-    name: "Shadowbrook",
-    designation: "Lead Product Design",
-    page: "home-5",
+    img: diana,
+    name: "Diana Lopez",
+    designation: "Business Consultant",
+    page: "any",
   },
   {
     id: 8,
-    img: team_8,
-    name: "Emberstone",
-    designation: "UI Design",
-    page: "home-5",
+    img: nihal,
+    name: "Nihal Shakkir",
+    designation: "Business Consultant",
+    page: "any",
   },
-  // team three
-  {
-    id: 9,
-    img: team_9,
-    name: "Stormrider",
-    designation: "Owner & Founder",
-    page: "team-three",
-  },
-  {
-    id: 10,
-    img: team_10,
-    name: "Frostfall",
-    designation: "Project Manager",
-    page: "team-three",
-  },
-  {
-    id: 11,
-    img: team_11,
-    name: "Shadowbrook",
-    designation: "Lead Product Design",
-    page: "team-three",
-  },
-  {
-    id: 12,
-    img: team_12,
-    name: "Emberstone",
-    designation: "UI Design",
-    page: "team-three",
-  },
-  // team page
-  {
-    id: 13,
-    img: team_13,
-    name: "Starfire",
-    designation: "Manager",
-    page: "team",
-  },
-  {
-    id: 14,
-    img: team_14,
-    name: "Thunderstrike",
-    designation: "Marketing Expert",
-    page: "team",
-  },
-  {
-    id: 15,
-    img: team_15,
-    name: "Silverstone",
-    designation: "Analysis",
-    page: "team",
-  },
-  {
-    id: 16,
-    img: team_16,
-    name: "Ravenshadow",
-    designation: "Senior Officer",
-    page: "team",
-  },
+  // {
+  //   id: 9,
+  //   img: team_9,
+  //   name: "Stormrider",
+  //   designation: "Owner & Founder",
+  //   page: "any",
+  // },
+  // {
+  //   id: 10,
+  //   img: team_10,
+  //   name: "Frostfall",
+  //   designation: "Project Manager",
+  //   page: "any",
+  // },
+  // {
+  //   id: 11,
+  //   img: team_11,
+  //   name: "Shadowbrook",
+  //   designation: "Lead Product Design",
+  //   page: "any",
+  // },
+  // {
+  //   id: 12,
+  //   img: team_12,
+  //   name: "Emberstone",
+  //   designation: "UI Design",
+  //   page: "any",
+  // },
+  // // team page
+  // {
+  //   id: 13,
+  //   img: team_13,
+  //   name: "Starfire",
+  //   designation: "Manager",
+  //   page: "any",
+  // },
+  // {
+  //   id: 14,
+  //   img: team_14,
+  //   name: "Thunderstrike",
+  //   designation: "Marketing Expert",
+  //   page: "any",
+  // },
+  // {
+  //   id: 15,
+  //   img: team_15,
+  //   name: "Silverstone",
+  //   designation: "Analysis",
+  //   page: "any",
+  // },
+  // {
+  //   id: 16,
+  //   img: team_16,
+  //   name: "Ravenshadow",
+  //   designation: "Senior Officer",
+  //   page: "any",
+  // },
 ];
 
 export default team_data;

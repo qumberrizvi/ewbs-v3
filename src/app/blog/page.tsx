@@ -4,14 +4,14 @@ import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/header/header-two";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import FooterThree from "@/layout/footer/footer-three";
-import blog_bg from "@/assets/images/media/img_32.jpg";
+import blog_bg from "@/assets/images/media/services-banner.png";
 import shape from "@/assets/images/shape/shape_34.svg";
 import BlogListArea from "@/components/blogs/blog-list-area";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 
 export const metadata: Metadata = {
-  title: "Blog Page",
+  title: "Blog - EWBS",
 };
 
 const BlogPage = () => {

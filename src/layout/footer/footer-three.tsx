@@ -21,19 +21,16 @@ const FooterThree = ({style_2}:{style_2?:boolean}) => {
 										<Image src={logo} alt="logo"/>
 									</Link>
 								</div> 
-								<p className="lh-sm mb-45 lg-mb-30">2190 Urban Terrace, Mirpur,  <br/>Licensed in 50 states.</p>
-								<p className="m0"><Link href="#">+757 699-4478</Link></p>
+								<p className="lh-sm mb-45 lg-mb-30">Office 903, 9th floor, Aspin Commercial Tower, Shaikh Zayed Road, Dubai, UAE</p>
+								<p className="m0"><Link href="tel:+971 42 559 901">+971 42 559 901</Link></p>
 							</div>
 						</div>
 						<div className="col-lg-2 col-sm-4 mb-20">
 							<h5 className="footer-title">Links</h5>
 							<ul className="footer-nav-link style-none">
 								<li><Link href="/">Home</Link></li>
-								<li><Link href="/pricing">Pricing Plan</Link></li>
 								<li><Link href="/about-us">About us</Link></li>
-								<li><Link href="/service-v1">Our services</Link></li>
-								<li><Link href="/project-v2">Portfolio</Link></li>
-								<li><Link href="/service-v2">Features</Link></li>
+								<li><Link href="/services">Our services</Link></li>
 							</ul>
 						</div>
 						<div className="col-lg-2 col-sm-4 mb-20">
@@ -41,7 +38,7 @@ const FooterThree = ({style_2}:{style_2?:boolean}) => {
 							<ul className="footer-nav-link style-none">
 								<li><Link href="/about-us-2">About us</Link></li>
 								<li><Link href="/blog-grid">Blogs</Link></li>
-								<li><Link href="/faq">FAQ’s</Link></li>
+								<li><Link href="/faq">FAQs</Link></li>
 								<li><Link href="/contact">Contact</Link></li>
 							</ul>
 						</div>
@@ -78,7 +75,7 @@ const FooterThree = ({style_2}:{style_2?:boolean}) => {
 						</div>
 						<div className="col-xl-4 col-lg-3 order-lg-1 mb-15">
 							<div className="copyright text-center text-lg-start order-lg-first">
-                Copyright @{new Date().getFullYear()} babun inc.
+                Copyright @{new Date().getFullYear()} EWBS Excellence Business Services LLC.
               </div>
 						</div>
 					</div>

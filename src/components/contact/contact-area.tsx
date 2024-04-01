@@ -1,9 +1,8 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-// internal
 import icon_1 from "@/assets/images/icon/icon_90.svg";
 import icon_2 from "@/assets/images/icon/icon_91.svg";
-import icon_3 from "@/assets/images/icon/icon_92.svg";
+import icon_3 from "@/assets/images/icon/envelope.svg";
 import icon_4 from "@/assets/images/assets/ils_07.svg";
 import ContactForm from "../forms/contact-form";
 
@@ -46,15 +45,15 @@ const ContactArea = () => {
                 <div className="col-md-4">
                   <AddressBlock
                     icon={icon_2}
-                    title="Contact Info"
+                    title="Our Phone"
                     subtitle='Open a chat or give us call at <br/><a href="tel:+971 42 559 901" className="call text-lg fw-500">+971 42 559 901</a>'
                   />
                 </div>
                 <div className="col-md-4">
                   <AddressBlock
                     icon={icon_3}
-                    title="Live Support"
-                    subtitle='live chat service <br/><a href="#" className="webaddress">www.babunlivechat.com</a>'
+                    title="Our Email"
+                    subtitle='Write to us at <br/><a href="mailto:info@ewbsbusiness.ae" className="webaddress">info@ewbsbusiness.ae</a>'
                   />
                 </div>
               </div>
@@ -94,7 +93,7 @@ const ContactArea = () => {
         <div className="gmap_canvas h-100 w-100">
           <iframe
             className="gmap_iframe h-100 w-100"
-            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=dhaka collage&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=EWBS Excellence Business Services&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
         </div>
       </div>

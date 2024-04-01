@@ -25,10 +25,9 @@ const TeamOnePage = () => {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="Our Talented Experts"
-            subtitle="Meet our experts, guiding you through financial intricacies with precision"
+            subtitle="Meet our experts, guiding you through business intricacies with precision"
             page="Team"
             shape={shape}
-            bg_img={team_bg}
           />
           {/* breadcrumb end */}
 
