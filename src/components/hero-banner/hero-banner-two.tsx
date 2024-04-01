@@ -1,13 +1,9 @@
 'use client'
 import React from "react";
-import Image from "next/image";
 import Slider from "react-slick";
 import Link from "next/link";
 // internal
 import bg_1 from "@/assets/images/media/blank.png";
-import bg_2 from "@/assets/images/media/img_02.jpg";
-import bg_3 from "@/assets/images/media/img_03.jpg";
-import icon from "@/assets/images/icon/icon_02.svg";
 
 // slider bg
 const slider_bg = [bg_1];
@@ -59,12 +55,12 @@ const HeroBannerTwo = () => {
                     </div>
                 </div>
             </div>
-            <Link href="/contact"
-                  className="more-btn rounded-circle d-flex align-items-center justify-content-center tran3s wow fadeInLeft"
-                  target="_blank"
-            >
-                <i className="bi bi-arrow-up-right"></i>
-            </Link>
+            {/*<Link href="/contact"*/}
+            {/*      className="more-btn rounded-circle d-flex align-items-center justify-content-center tran3s wow fadeInLeft"*/}
+            {/*      target="_blank"*/}
+            {/*>*/}
+            {/*    <i className="bi bi-arrow-up-right"></i>*/}
+            {/*</Link>*/}
         </div>
     );
 };

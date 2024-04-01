@@ -20,11 +20,11 @@ const BlockFeatureThree = () => {
                                 className="block-one pt-45 lg-pt-30 pb-20 ps-3 ps-xl-5 pe-xl-5 pe-3 position-relative border-30 wow fadeInUp">
                                 <div className="row">
                                     <div className="col-lg-5">
-                                        <div className="tag d-inline-block border-30 fw-500 text-uppercase mb-15">
+                                        <div className="tag d-inline-block border-30 border-white fw-500 text-uppercase text-white mb-15">
                                             Consulting
                                         </div>
                                     </div>
-                                    <div className="col-lg-7 mt-120">
+                                    <div className="col-lg-7">
                                         <h3 className="block-title d-inline-block position-relative">
                                             <Link href="/about-us">
                                                 Helped 1000+ businesses establish successfully in the Emirates.
