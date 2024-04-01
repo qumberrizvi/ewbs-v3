@@ -63,7 +63,7 @@ const menu_data: IMenu[] = [
         dropdown_menus:[
           {link:'/blog',title:'Blog List'},
           {link:'/blog-grid',title:'Blog Grid'},
-          {link:'/blog-details',title:'Blog Details'},
+          {link:'/post',title:'Blog Details'},
         ]*/
     },
     {

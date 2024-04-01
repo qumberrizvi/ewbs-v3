@@ -25,7 +25,7 @@ const HomeTwoBlogs = () => {
           </div>
 
           <div className="section-btn sm-mt-40">
-            <Link href="/blog-grid" className="btn-five icon-link">
+            <Link href="/blog" className="btn-five icon-link">
               <span className="text">See all blogs</span>
               <div className="icon tran3s rounded-circle d-flex align-items-center justify-content-center">
                 <i className="bi bi-arrow-up-right"></i>
