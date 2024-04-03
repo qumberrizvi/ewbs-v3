@@ -10,16 +10,22 @@ type FormData = {
   email: string;
   phone: string;
   message: string;
+  selectedPackage?: number | null;
 };
 
 const schema = yup.object().shape({
   name: yup.string().required().label("Name"),
   email: yup.string().required().email().label("Email"),
   phone: yup.string().required().min(4).label("Phone"),
+  selectedPackage: yup.number().nullable(),
   message: yup.string().required().min(10).label("Message"),
 });
 
-const ContactForm = () => {
+type IProps = {
+  selectedPackage?: number | null;
+};
+
+const ContactForm = ({selectedPackage}: IProps) => {
   const {register,handleSubmit,reset,formState: { errors }} = useForm<FormData>({
     resolver: yupResolver(schema),
   });
@@ -85,6 +91,12 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
+        <input
+            type="hidden"
+            {...register("selectedPackage")} id='selectedPackage'
+            name='selectedPackage'
+            value={(selectedPackage) ? selectedPackage : undefined}
+        />
         <div className="col-12">
           <button type='submit' className="btn-four tran3s w-100 d-block">
             Send Message

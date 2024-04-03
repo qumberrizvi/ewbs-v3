@@ -49,7 +49,7 @@ const menu_data: IMenu[] = [
               {link:'/project-v1',title:'Project V-1'},
               {link:'/project-v2',title:'Project V-2'},
               {link:'/project-v3',title:'Project V-3'},
-              {link:'/project-details-v1',title:'Project Details V-1'},
+              {link:'/[slug]',title:'Project Details V-1'},
               {link:'/project-details-v2',title:'Project Details V-2'},
             ]
           }

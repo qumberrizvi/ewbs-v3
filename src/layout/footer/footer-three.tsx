@@ -43,24 +43,25 @@ const FooterThree = ({style_2}:{style_2?:boolean}) => {
 							</ul>
 						</div>
 						<div className="col-xxl-2 col-lg-3 col-sm-4 mb-20">
-							<h5 className="footer-title">Support</h5>
+							<h5 className="footer-title">Freezones</h5>
 							<ul className="footer-nav-link style-none">
-								<li><Link href="/contact">Terms of use</Link></li>
-								<li><Link href="/contact">Terms & conditions</Link></li>
-								<li><Link href="/contact">Privacy</Link></li>
-								<li><Link href="/contact">Cookie policy</Link></li>
+								<li><Link href="/freezones/dubai">Dubai Freezone</Link></li>
+								<li><Link href="/freezones/shams">Shams Freezone</Link></li>
+								<li><Link href="/freezones/amc">AMC Freezone</Link></li>
+								<li><Link href="/freezones/rakez">Rakez Freezone</Link></li>
+								<li><Link href="/freezones/ifza">Ifza Freezone</Link></li>
 							</ul>
 						</div>
 					</div>
 					<Image src={shape_1} alt="shape" className="lazy-img shapes shape_01"/>
-					<Image src={style_2?shape_3:shape_2} alt="shape" className="lazy-img shapes shape_02"/>
+					<Image src={style_2 ? shape_3 : shape_2} alt="shape" className="lazy-img shapes shape_02"/>
 				</div>
 			</div>
-			<div className="container">
-				<div className="bottom-footer">
-					<div className="row">
-						<div className="col-xl-4 col-lg-3 order-lg-3 mb-15">
-							<ul className="style-none d-flex align-items-center justify-content-center justify-content-lg-end social-icon">
+		<div className="container">
+			<div className="bottom-footer">
+				<div className="row">
+					<div className="col-xl-4 col-lg-3 order-lg-3 mb-15">
+						<ul className="style-none d-flex align-items-center justify-content-center justify-content-lg-end social-icon">
 								{/* social link */}
 								<FooterSocial/>
 								{/* social link */}

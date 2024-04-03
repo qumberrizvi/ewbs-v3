@@ -90,7 +90,7 @@ const ServiceOneArea = () => {
                                         <Image src={s.icon} alt="icon" className="lazy-img icon me-auto"/>
                                         <h4 className="fw-bold mt-30 mb-25">{s.title}</h4>
                                         <p className="mb-20">{s.desc}</p>
-                                        <Link href="/service-details"
+                                        <Link href="/contact"
                                               className="arrow-btn tran3s mt-auto stretched-link"><Image src={icon_1}
                                                                                                          alt="icon"
                                                                                                          className="lazy-img"/></Link>

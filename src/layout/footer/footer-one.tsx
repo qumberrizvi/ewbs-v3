@@ -42,22 +42,25 @@ const FooterOne = () => {
             </ul>
           </div>
           <div className="col-xl-2 col-md-3 col-sm-4 mb-20">
-            <h5 className="footer-title">Support</h5>
+            <h5 className="footer-title">Freezones</h5>
             <ul className="footer-nav-link style-none">
-              <li><Link href="/contact">Terms of use</Link></li>
-              <li><Link href="/contact">Privacy</Link></li>
+              <li><Link href="/freezones/dubai">Dubai Freezone</Link></li>
+              <li><Link href="/freezones/shams">Shams Freezone</Link></li>
+              <li><Link href="/freezones/amc">AMC Freezone</Link></li>
+              <li><Link href="/freezones/rakez">Rakez Freezone</Link></li>
+              <li><Link href="/freezones/ifza">Ifza Freezone</Link></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div className="container">
-      <div className="bottom-footer">
-        <div className="row align-items-center">
-          <div className="col-lg-5 order-lg-last mb-15">
-            <div className="footer-newsletter float-xl-end">
-              <h5 className="footer-title">Subscribe Newsletter</h5>
-              <form action="#">
+      <div className="container">
+        <div className="bottom-footer">
+          <div className="row align-items-center">
+            <div className="col-lg-5 order-lg-last mb-15">
+              <div className="footer-newsletter float-xl-end">
+                <h5 className="footer-title">Subscribe Newsletter</h5>
+                <form action="#">
                 <input type="email" placeholder="Enter your email address"/>
                 <button><i className="bi bi-arrow-right"></i></button>
               </form>

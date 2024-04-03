@@ -20,7 +20,7 @@ const FooterTwo = () => {
                 </Link>
               </div> 
               <p className="lh-sm mb-40 md-mb-20">
-                2190 Urban Terrace, Mirpur,  link Licensed in 50 states.
+                Office 903, 9th floor, Aspin Commercial Tower, Shaikh Zayed Road, Dubai, UAE
               </p>
               {/* social link */}
               <ul className="style-none d-flex align-items-center social-icon">
@@ -35,9 +35,6 @@ const FooterTwo = () => {
                 <li><Link href="/pricing">Pricing Plan</Link></li>
                 <li><Link href="/about-us">About us</Link></li>
                 <li><Link href="/service-v1">Our services</Link></li>
-                <li><Link href="/project-v1">Portfolio</Link></li>
-                <li><Link href="/blog">Careers</Link></li>
-                <li><Link href="/service-v2">Features</Link></li>
               </ul>
             </div>
             <div className="col-lg-2 col-sm-4 mb-20">
@@ -45,18 +42,18 @@ const FooterTwo = () => {
               <ul className="footer-nav-link style-none">
                 <li><Link href="/about-us-2">About us</Link></li>
                 <li><Link href="/blog-grid">Blogs</Link></li>
-                <li><Link href="/faq">FAQ’s</Link></li>
+                {/*<li><Link href="/faq">FAQs</Link></li>*/}
                 <li><Link href="/contact">Contact</Link></li>
               </ul>
             </div>
             <div className="col-xxl-2 col-lg-3 col-sm-4 mb-20">
-              <h5 className="footer-title">Support</h5>
+              <h5 className="footer-title">Freezones</h5>
               <ul className="footer-nav-link style-none">
-                <li><Link href="/contact">Terms of use</Link></li>
-                <li><Link href="/contact">Terms & conditions</Link></li>
-                <li><Link href="/contact">Privacy</Link></li>
-                <li><Link href="/contact">Cookie policy</Link></li>
-                <li><Link href="/contact">Self-service</Link></li>
+                <li><Link href="/freezones/dubai">Dubai Freezone</Link></li>
+                <li><Link href="/freezones/shams">Shams Freezone</Link></li>
+                <li><Link href="/freezones/amc">AMC Freezone</Link></li>
+                <li><Link href="/freezones/rakez">Rakez Freezone</Link></li>
+                <li><Link href="/freezones/ifza">Ifza Freezone</Link></li>
               </ul>
             </div>
           </div>
