@@ -3,6 +3,7 @@ import "./globals.scss";
 import {Providers} from "@/redux/provider";
 import {GoogleAnalytics} from "@/components/libraries/google-analytics";
 import {CallPage} from "@/components/libraries/call-page";
+import {WhatsWidget} from "@/components/libraries/whats-widget";
 
 
 export const metadata: Metadata = {
@@ -19,8 +20,9 @@ export default function RootLayout({
         <html lang="en">
         <body>
         <Providers>{children}</Providers>
-        <GoogleAnalytics/>
+        <WhatsWidget/>
         <CallPage/>
+        <GoogleAnalytics/>
         </body>
         </html>
     );
