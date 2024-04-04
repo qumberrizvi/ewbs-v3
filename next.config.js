@@ -4,7 +4,7 @@ const nextConfig = {
         return [
             {
                 source: '/rakez-freezone',
-                destination: '/freezone/rakez',
+                destination: '/freezones/rakez',
                 permanent: true,
             }
         ];
