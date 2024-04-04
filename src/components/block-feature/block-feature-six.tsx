@@ -45,7 +45,7 @@ const BlockFeatureSix = ({ style_2 = false }: { style_2?: boolean }) => {
                         </div>
                         <h4 className="fw-bold mt-30 mb-20">{item.title}</h4>
                         <p>{item.desc}</p>
-                        <Link href="/service-details" className="stretched-link"></Link>
+                        <Link href="/services" className="stretched-link"></Link>
                       </div>
                     </div>
                   ))}
@@ -84,7 +84,7 @@ const BlockFeatureSix = ({ style_2 = false }: { style_2?: boolean }) => {
                       </div>
                       <h4 className="fw-bold mt-30 mb-20">{item.title}</h4>
                       <p>{item.desc}</p>
-                      <Link href="/service-details" className="stretched-link"></Link>
+                      <Link href="/services" className="stretched-link"></Link>
                     </div>
                   </div>
                 ))}

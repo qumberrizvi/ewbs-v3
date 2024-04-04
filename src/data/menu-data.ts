@@ -26,7 +26,7 @@ const menu_data: IMenu[] = [
             menus:[
               {link:'/services',title:'Service v-1'},
               {link:'/service-v2',title:'Service v-2'},
-              {link:'/service-details',title:'Service Details'},
+              {link:'/services',title:'Service Details'},
               {link:'/team',title:'Team V-1'},
               {link:'/team-v2',title:'Team V-2'},
               {link:'/team-details',title:'Team Details'}

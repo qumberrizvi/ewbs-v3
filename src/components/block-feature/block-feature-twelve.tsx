@@ -68,7 +68,7 @@ const BlockFeatureTwelve = () => {
                   Optimize expense tracking across platforms, & product lines
                   using multiple cards.
                 </p>
-                <Link href="/service-details"
+                <Link href="/services"
                   className="arrow-btn tran3s mt-auto stretched-link"
                 >
                   <Image src={arrow} alt="arrow-icon" className="lazy-img" />

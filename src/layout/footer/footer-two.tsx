@@ -34,7 +34,7 @@ const FooterTwo = () => {
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/pricing">Pricing Plan</Link></li>
                 <li><Link href="/about-us">About us</Link></li>
-                <li><Link href="/service-v1">Our services</Link></li>
+                <li><Link href="/services">Our services</Link></li>
               </ul>
             </div>
             <div className="col-lg-2 col-sm-4 mb-20">

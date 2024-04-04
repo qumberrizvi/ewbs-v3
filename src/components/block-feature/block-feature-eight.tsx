@@ -40,7 +40,7 @@ const BlockFeatureEight = () => {
                   <p className="mb-25">
                     {item.desc}
                   </p>
-                  <Link href="/service-details"
+                  <Link href="/services"
                     className="arrow-btn tran3s mt-auto stretched-link"
                   >
                     <Image src={icon} alt="icon" className="lazy-img" />
@@ -51,7 +51,7 @@ const BlockFeatureEight = () => {
           </div>
 
           <div className="section-btn md-mt-40">
-            <Link href="/service-v1" className="btn-thirteen tran3">
+            <Link href="/services" className="btn-thirteen tran3">
               Learn More
             </Link>
           </div>

@@ -39,7 +39,7 @@ const FooterFour = () => {
               <li><Link href="/">Home</Link></li>
               <li><Link href="/pricing">Pricing Plan</Link></li>
               <li><Link href="/about-us">About us</Link></li>
-              <li><Link href="/service-v1">Our services</Link></li>
+              <li><Link href="/services">Our services</Link></li>
               <li><Link href="/project-v1">Portfolio</Link></li>
               <li><Link href="/service-v2">Features</Link></li>
             </ul>

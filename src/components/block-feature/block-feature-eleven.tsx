@@ -66,7 +66,7 @@ const BlockFeatureEleven = () => {
                         <p className="mb-25">
                           {s.desc}
                         </p>
-                        <Link href="/service-v1" className="btn-three">
+                        <Link href="/services" className="btn-three">
                           <span>Learn More</span>{" "}
                           <i className="bi bi-chevron-right"></i>
                         </Link>

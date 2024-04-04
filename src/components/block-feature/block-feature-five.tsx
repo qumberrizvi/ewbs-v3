@@ -30,7 +30,7 @@ const BlockFeatureFive = () => {
                 </div>
 								<h4 className="fw-bold mt-40 md-mt-20 mb-20">{s.title}</h4>
 								<p className="mb-60 md-mb-40">{s.desc}</p>
-								<Link href="/service-details" className="arrow-btn tran3s m-auto stretched-link">
+								<Link href="/services" className="arrow-btn tran3s m-auto stretched-link">
                   <Image src={arrow} alt="icon" className="lazy-img"/>
                 </Link>
 							</div>

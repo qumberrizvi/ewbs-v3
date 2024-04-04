@@ -64,7 +64,7 @@ const BlockFeatureOne = ({style_2 = false}: { style_2?: boolean }) => {
                                     <Image src={item.icon} alt="icon" className="lazy-img icon me-auto"/>
                                     <h4 className="fw-bold mt-30 mb-25">{item.title}</h4>
                                     <p className="mb-20">{item.desc}</p>
-                                    <Link href="/service-details" className="arrow-btn tran3s mt-auto stretched-link">
+                                    <Link href="/services" className="arrow-btn tran3s mt-auto stretched-link">
                                         <Image src={arrow} alt="arrow" className="lazy-img"/>
                                     </Link>
                                 </div>
@@ -74,7 +74,7 @@ const BlockFeatureOne = ({style_2 = false}: { style_2?: boolean }) => {
 
                     <div className="section-subheading sm-mt-40">
                         <p className="text-lg">We provide a full range of services to drive your business forward. </p>
-                        <Link href="/service-v1" className="btn-three icon-link">
+                        <Link href="/services" className="btn-three icon-link">
                             <span>See All Services</span>
                             <Image src={arrow} alt="arrow" className="lazy-img icon ms-1"/>
                         </Link>
