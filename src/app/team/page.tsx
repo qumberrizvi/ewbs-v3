@@ -4,19 +4,17 @@ import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/header/header-two";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import FooterThree from "@/layout/footer/footer-three";
-import blog_bg from "@/assets/images/media/img_32.jpg";
+import team_bg from "@/assets/images/media/img_32.jpg";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
-import BlogDetailsArea from "@/components/blogs/blog-details/blog-details-area";
-import shape from "@/assets/images/shape/shape_35.svg";
-import blog_data from "@/data/blog-data";
+import shape from "@/assets/images/shape/shape_31.svg";
+import TeamOneArea from "@/components/team/team-v1-area";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 
 export const metadata: Metadata = {
-  title: "Blog Details Page",
+  title: "Team v1 Page",
 };
 
-const BlogDetailsPage = ({ params }: { params: { id: string } }) => {
-  const blog = blog_data.find((b) => Number(b.id) === Number(params.id))!;
+const TeamOnePage = () => {
   return (
     <Wrapper>
       <div className="main-page-wrapper">
@@ -26,26 +24,16 @@ const BlogDetailsPage = ({ params }: { params: { id: string } }) => {
         <main>
           {/* breadcrumb start */}
           <BreadcrumbOne
-            title="Single Blog Details"
-            subtitle="Meet our experts, guiding you through financial intricacies with precision"
-            page="Blog"
-            bg_img={blog_bg}
-            style_2={true}
+            title="Our Talented Experts"
+            subtitle="Meet our experts, guiding you through business intricacies with precision"
+            page="Team"
             shape={shape}
           />
           {/* breadcrumb end */}
 
-          {/* blog details area start */}
-          {blog ? (
-            <BlogDetailsArea blog={blog} />
-          ) : (
-            <div className="container">
-              <div className="mt-80 mb-80 text-center">
-                <h3>Not Found Any blog this id {params.id}</h3>
-              </div>
-            </div>
-          )}
-          {/* blog details area end */}
+          {/* team v1 area start */}
+          <TeamOneArea />
+          {/* team v1 area end */}
 
           {/* fancy banner three start */}
           <FancyBannerThree />
@@ -64,4 +52,4 @@ const BlogDetailsPage = ({ params }: { params: { id: string } }) => {
   );
 };
 
-export default BlogDetailsPage;
+export default TeamOnePage;

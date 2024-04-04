@@ -3,7 +3,7 @@ import team_data from "@/data/team-data";
 import TeamSingle from "./team-single";
 
 const TeamOneArea = () => {
-  const teams = team_data.filter((t) => t.page === "home" || t.page === "team");
+  const teams = team_data.filter((t) => t.page === "home" || t.page === "any");
   return (
     <div className="team-section-one mt-150 lg-mt-80 mb-100 lg-mb-40">
       <div className="container">

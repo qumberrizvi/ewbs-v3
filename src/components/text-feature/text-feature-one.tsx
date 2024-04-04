@@ -48,7 +48,7 @@ const TextFeatureOne = ({style_2 = false}: { style_2?: boolean }) => {
                             <div className="col-xl-5 col-lg-6 wow fadeInLeft">
                                 <div className="title-one">
                                     <div className="upper-title">About us</div>
-                                    <h2>15k+ Client using Our Services.</h2>
+                                    <h2>1.2k+ Client using Our Services.</h2>
                                 </div>
                                 <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                                     EWBS Excellence Business Services LLC is your premier
@@ -86,12 +86,11 @@ const TextFeatureOne = ({style_2 = false}: { style_2?: boolean }) => {
                                 <div className="col-lg-5 wow fadeInLeft">
                                     <div className="title-one">
                                         <div className="upper-title">About us</div>
-                                        <h2>15k+ Client using Our Services.</h2>
+                                        <h2>1.2k+ Client using Our Services</h2>
                                     </div>
                                     <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-30">
-                                        Your success is our mission. As business advisors, we offer
-                                        expert guidance, unlocking your potential for growth and
-                                        profitability
+                                        EWBS Excellence Business Services LLC is your premier
+                                        partner for seamless business expansion in the Emirates.
                                     </p>
                                     <Link href="/contact" className="btn-three icon-link mt-15 md-mb-40">
                                         <span>Request a Callback</span>
@@ -100,9 +99,9 @@ const TextFeatureOne = ({style_2 = false}: { style_2?: boolean }) => {
                                 </div>
                                 <div className="col-lg-6 ms-auto wow fadeInRight">
                                     <CardItem icon={icon_2} title="Our Mission"
-                                              desc="Our mission is to reshape lives by offering financial expertise, faster growth, & securing futures through trusted partnerships & innovation."/>
+                                              desc="EWBS is dedicated to empowering entrepreneurs by providing tailored solutions that transform visions into thriving realities. With unwavering commitment and integrity, we aim to be the premier partner for seamless business expansion in Dubai's dynamic economic landscape."/>
                                     <CardItem icon={icon_3} title="Our company vision."
-                                              desc="Our vision is to create a financially secure future for all, offering innovative solutions & expert guidance to navigate prosperity."/>
+                                              desc="Our vision at EWBS is to be the leading catalyst for entrepreneurial success in the Emirates. Through our unwavering commitment to excellence and continuous evolution, we aim to shape the future of entrepreneurship in Dubai and beyond, driving economic growth and prosperity for all stakeholders."/>
                                 </div>
                             </div>
                             <Image src={shape} alt="shape" className="lazy-img shapes shape_01"/>
@@ -110,10 +109,10 @@ const TextFeatureOne = ({style_2 = false}: { style_2?: boolean }) => {
 
                         <div className="counter-wrapper mt-80 lg-mt-20">
                             <div className="row">
-                                <CounterBlock num={120} text="+" title="Partner with us" delay="0"/>
-                                <CounterBlock num={1.3} text="b+" title="Cumulative trading volume" delay="1"/>
-                                <CounterBlock num={705} text="k" title="Successful Projects" delay="2"/>
-                                <CounterBlock num={1.2} text="%" title="Low interest rate" delay="3"/>
+                                <CounterBlock num={1.2} text="k+" title="Happy Client Businesses" delay="0"/>
+                                <CounterBlock num={15} text="+" title="Advisors Ready to Help" delay="1"/>
+                                <CounterBlock num={4.7} text="★" title="Great Google Rating" delay="2"/>
+                                <CounterBlock num={100} text="k+" title="Dirhams of Revenue Generated" delay="3"/>
                             </div>
                         </div>
                     </div>

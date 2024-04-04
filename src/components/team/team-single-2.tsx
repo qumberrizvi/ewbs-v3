@@ -13,14 +13,26 @@ const TeamSingleTwo = ({team,spacing}: {team:ITeam;spacing?: string;}) => {
           className="lazy-img w-100"
           style={{ height: "auto" }}
         />
-        <Link href="/team-details"
-          className="round-btn rounded-circle d-flex align-items-center justify-content-center tran3s"
-        >
-          <i className="bi bi-arrow-up-right"></i>
-        </Link>
+          <div className="round-btn-container d-flex align-items-center justify-content-center gap-2 tran3s">
+              <Link href={`tel:${team.phone}`}
+                    className="round-btn rounded-circle d-flex align-items-center justify-content-center"
+              >
+                  <i className="bi bi-telephone"></i>
+              </Link>
+              <Link href={`https://api.whatsapp.com/send?phone=${team.phone}&text=Hi%20${team.name}`}
+                    className="round-btn rounded-circle d-flex align-items-center justify-content-center"
+              >
+                  <i className="bi bi-whatsapp"></i>
+              </Link>
+              <Link href={`mailto:${team.email}`}
+                    className="round-btn rounded-circle d-flex align-items-center justify-content-center"
+              >
+                  <i className="bi bi-at"></i>
+              </Link>
+          </div>
       </div>
-      <h4 className="fw-500 pt-20 m0">{team.name}</h4>
-      <div className="fs-6">{team.designation}</div>
+        <h4 className="fw-500 pt-20 m0">{team.name}</h4>
+        <div className="fs-6">{team.designation}</div>
     </div>
   );
 };

@@ -515,12 +515,32 @@ hr {opacity: 0.09; margin: 5px 0;}
     color: #fff; 
   }
 }
+
+.btn-twenty {
+  font-weight: 500;
+  font-size: 20px;
+  color: $color-two;
+  line-height: 52px;
+  text-align: center;
+  padding: 0 35px;
+  border: 1px solid $color-two;
+  border-radius: 50px;
+  @include transition(0.3s);
+  .icon {
+    width: 1.35em;
+  }
+  &:hover {
+    color: #fff;
+    background: $color-two;
+    border-color: $color-two;
+  }
+}
 // Title Style
 .title-one {
   .upper-title {
     font-weight: 500;
     margin-bottom: 14px;
-    color: #46846A;
+    color: #db1f26;
   }
   h2 {
     font-weight: 700;
@@ -530,7 +550,7 @@ hr {opacity: 0.09; margin: 5px 0;}
   .upper-title {
     font-weight: 500;
     margin-bottom: 5px;
-    color: #1CA161;
+    color: #db1f26;
   }
   h2 {
     font-size: 72px;
@@ -549,7 +569,7 @@ hr {opacity: 0.09; margin: 5px 0;}
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 15px;
-    color: #1CA161;
+    color: #db1f26;
   }
   h2 {
     font-weight: 700;

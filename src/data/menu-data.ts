@@ -27,7 +27,7 @@ const menu_data: IMenu[] = [
               {link:'/services',title:'Service v-1'},
               {link:'/service-v2',title:'Service v-2'},
               {link:'/service-details',title:'Service Details'},
-              {link:'/team-v1',title:'Team V-1'},
+              {link:'/team',title:'Team V-1'},
               {link:'/team-v2',title:'Team V-2'},
               {link:'/team-details',title:'Team Details'}
             ]
@@ -49,7 +49,7 @@ const menu_data: IMenu[] = [
               {link:'/project-v1',title:'Project V-1'},
               {link:'/project-v2',title:'Project V-2'},
               {link:'/project-v3',title:'Project V-3'},
-              {link:'/project-details-v1',title:'Project Details V-1'},
+              {link:'/[slug]',title:'Project Details V-1'},
               {link:'/project-details-v2',title:'Project Details V-2'},
             ]
           }
@@ -63,7 +63,7 @@ const menu_data: IMenu[] = [
         dropdown_menus:[
           {link:'/blog',title:'Blog List'},
           {link:'/blog-grid',title:'Blog Grid'},
-          {link:'/blog-details',title:'Blog Details'},
+          {link:'/post',title:'Blog Details'},
         ]*/
     },
     {

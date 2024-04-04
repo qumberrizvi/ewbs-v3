@@ -66,8 +66,11 @@
         bottom: -25px;
         background: #fff;
     }
-    .round-btn {
+    .round-btn-container {
         position: absolute;
+
+    }
+    .round-btn {
         font-size: 25px;
         width: 55px;
         height: 55px;
@@ -343,8 +346,11 @@
         opacity: 0;
         @include transition(0.3s);
     }
-    .round-btn {
+    .round-btn-container {
         position: absolute;
+
+    }
+    .round-btn {
         font-size: 25px;
         width: 55px;
         height: 55px;
@@ -385,8 +391,7 @@
             background: $color-one;
         }
     }
-    &.arrow:before,
-    &.arrow:after {
+    &.arrow:before {
         content: url(../images/shape/shape_30.svg);
         position: absolute;
         top:11px;
@@ -481,7 +486,7 @@
 }
 // Pricing Card
 .pricing-card-one {
-    background: #fff;
+    //background: #fff;
     border-radius: 20px;
     padding: 45px 70px 50px;
     h2 {

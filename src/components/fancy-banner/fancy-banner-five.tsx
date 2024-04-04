@@ -34,7 +34,7 @@ const FancyBannerFive = ({style_2=false,style_3=false }:{style_2?:boolean;style_
       {style_2 && <div className="fancy-banner-five no-bg text-center position-relative mt-30 lg-mt-10">
         <div className="container">
           <div className="bg-wrapper pt-95 lg-pt-50 pb-95 lg-pb-50">
-            <h2 className="text-white fw-bold mb-50 lg-mb-30">Explore Our Business Division here.</h2>
+            <h2 className="text-white mb-50 lg-mb-30">Say Goodbye to Business Setup Hassles.</h2>
             <a className="fancybox rounded-circle video-icon tran5s text-center d-flex align-items-center justify-content-center m-auto cursor-pointer" onClick={() => setIsVideoOpen(true)}>
               <Image src={sticker} alt="sticker" className="lazy-img" style={imgStyle} />
             </a>
@@ -56,7 +56,7 @@ const FancyBannerFive = ({style_2=false,style_3=false }:{style_2?:boolean;style_
       <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
-        videoId={"aXFSJTjVjw0"}
+        videoId={"lx7cgYovvP8"}
       />
       {/* video modal end */}
     </>

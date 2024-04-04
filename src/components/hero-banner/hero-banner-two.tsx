@@ -1,16 +1,12 @@
 'use client'
 import React from "react";
-import Image from "next/image";
 import Slider from "react-slick";
 import Link from "next/link";
 // internal
-import bg_1 from "@/assets/images/media/img_01.jpg";
-import bg_2 from "@/assets/images/media/img_02.jpg";
-import bg_3 from "@/assets/images/media/img_03.jpg";
-import icon from "@/assets/images/icon/icon_02.svg";
+import bg_1 from "@/assets/images/media/blank.png";
 
 // slider bg
-const slider_bg = [bg_1, bg_2, bg_3];
+const slider_bg = [bg_1];
 // slider setting
 const slider_setting = {
     dots: false,
@@ -38,34 +34,33 @@ const HeroBannerTwo = () => {
             </Slider>
             <div className="container position-relative">
                 <div className="row">
-                    <div className="col-xl-6 col-lg-7 ms-auto">
+                    <div className="col-xl-6 col-lg-7 me-auto">
                         <h1 className="hero-heading d-inline-block position-relative wow fadeInUp">
                             Ready to Start<br/>
                             Your Business<br/>
                             in Dubai?
                         </h1>
                         <p
-                            className="text-xl text-white pt-35 pb-25 wow fadeInUp"
+                            className="text-xl pt-35 pb-25 wow fadeInUp"
                             data-wow-delay="0.1s"
                         >
                             From idea to reality: UAE business setup simplified with EWBS expertise! #ewbsbusiness
                         </p>
                         <Link href="/contact"
-                              className="btn-two icon-link wow fadeInUp"
+                              className="btn-four icon-link wow fadeInUp"
                               data-wow-delay="0.2s"
                         >
-                            <span>Let’s Talk</span>
-                            <Image src={icon} alt="icon" className="lazy-img icon ms-2"/>
+                            <span>Let’s Talk →</span>
                         </Link>
                     </div>
                 </div>
             </div>
-            <Link href="/contact"
-                  className="more-btn rounded-circle d-flex align-items-center justify-content-center tran3s wow fadeInLeft"
-                  target="_blank"
-            >
-                <i className="bi bi-arrow-up-right"></i>
-            </Link>
+            {/*<Link href="/contact"*/}
+            {/*      className="more-btn rounded-circle d-flex align-items-center justify-content-center tran3s wow fadeInLeft"*/}
+            {/*      target="_blank"*/}
+            {/*>*/}
+            {/*    <i className="bi bi-arrow-up-right"></i>*/}
+            {/*</Link>*/}
         </div>
     );
 };

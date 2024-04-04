@@ -5,5 +5,7 @@ export interface ITeam {
   img: StaticImageData;
   name: string;
   designation: string;
+  phone: string;
+  email: string;
   page: string;
 }

@@ -36,11 +36,13 @@ const FeedbackOne = ({cls}:{cls?:string}) => {
                     <div className="col-md-7 ms-auto order-md-last">
                       <blockquote>{item.desc}</blockquote>
                       <div className="d-flex align-items-center">
-                        <Image
-                          src={item.user}
-                          alt="user"
-                          className="avatar rounded-circle"
-                        />
+                        {(item.user) && (
+                            <Image
+                                src={item.user}
+                                alt="user"
+                                className="avatar rounded-circle"
+                            />
+                        )}
                         <div className="ps-4">
                           <div className="name fw-bold text-dark">
                             {item.name}

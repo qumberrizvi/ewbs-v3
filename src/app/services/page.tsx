@@ -4,14 +4,14 @@ import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/header/header-two";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import FooterThree from "@/layout/footer/footer-three";
-import service_bg from "@/assets/images/media/img_32.jpg";
+import service_bg from "@/assets/images/media/services-banner.png";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import shape from "@/assets/images/shape/shape_26.svg";
 import ServiceOneArea from "@/components/services/service-v1-area";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 
 export const metadata: Metadata = {
-  title: "Service Page",
+  title: "Our Services - EWBS",
 };
 
 const ServicePage = () => {
@@ -25,12 +25,12 @@ const ServicePage = () => {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="Our offerings & Services"
-            subtitle="Offering solutions & services to address a spectrum of financial issues"
+            subtitle="Start Strong in Dubai! Transform Your Ideas into Profitable Ventures #ewbsbusiness"
             page="Services"
             shape={shape}
             bg_img={service_bg}
             style_2={true}
-            cls="me-xxl-4 me-lg-5"
+            cls="me-xxl-4 me-lg-5 vh-70"
           />
           {/* breadcrumb end */}
 

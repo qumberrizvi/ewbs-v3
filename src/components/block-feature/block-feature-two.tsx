@@ -27,7 +27,7 @@ const BlockFeatureTwo = () => {
           </div>
           <div className="col-md-3">
             <div className="ps-lg-5 sm-pb-30 sm-pt-30">
-              <div className="numb fw-500"><span className="counter">10</span>+</div>
+              <div className="numb fw-500"><span className="counter">6</span>+</div>
               <p className="m0">Years Experience <br/> with pride.</p>
             </div>
           </div>

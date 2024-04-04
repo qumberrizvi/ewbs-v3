@@ -17,7 +17,7 @@ const FooterOne = () => {
                 <Image src={logo} alt="logo"/>
               </Link>
             </div> 
-            <p className="text-white lh-sm mb-35">Top-rated <span className="opacity-50">business <br/> consultancy for your success</span></p>
+            <p className="text-white lh-sm mb-35">Top-rated <span className="opacity-30">business <br/> consultancy for your success</span></p>
             {/* social link */}
             <ul className="style-none d-flex align-items-center social-icon">
              <FooterSocial/>
@@ -28,39 +28,39 @@ const FooterOne = () => {
             <h5 className="footer-title">Links</h5>
             <ul className="footer-nav-link style-none">
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/pricing">Pricing Plan</Link></li>
               <li><Link href="/about-us">About us</Link></li>
-              <li><Link href="/service-v1">Our services</Link></li>
+              <li><Link href="/services">Our services</Link></li>
             </ul>
           </div>
           <div className="col-xl-2 col-md-3 col-sm-4 mb-20">
             <h5 className="footer-title">Company</h5>
             <ul className="footer-nav-link style-none">
-              <li><Link href="/about-us-2">About us</Link></li>
+              <li><Link href="/about-us">About us</Link></li>
               <li><Link href="/blog">Blogs</Link></li>
-              <li><Link href="/faq">FAQ’s</Link></li>
+              <li><Link href="/faq">FAQs</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
           <div className="col-xl-2 col-md-3 col-sm-4 mb-20">
-            <h5 className="footer-title">Support</h5>
+            <h5 className="footer-title">Freezones</h5>
             <ul className="footer-nav-link style-none">
-              <li><Link href="/contact">Terms of use</Link></li>
-              <li><Link href="/contact">Terms & conditions</Link></li>
-              <li><Link href="/contact">Privacy</Link></li>
-              <li><Link href="/contact">Cookie policy</Link></li>
+              <li><Link href="/freezones/dubai">Dubai Freezone</Link></li>
+              <li><Link href="/freezones/shams">Shams Freezone</Link></li>
+              <li><Link href="/freezones/amc">AMC Freezone</Link></li>
+              <li><Link href="/freezones/rakez">Rakez Freezone</Link></li>
+              <li><Link href="/freezones/ifza">Ifza Freezone</Link></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div className="container">
-      <div className="bottom-footer">
-        <div className="row align-items-center">
-          <div className="col-lg-5 order-lg-last mb-15">
-            <div className="footer-newsletter float-xl-end">
-              <h5 className="footer-title">Subscribe Newsletter</h5>
-              <form action="#">
+      <div className="container">
+        <div className="bottom-footer">
+          <div className="row align-items-center">
+            <div className="col-lg-5 order-lg-last mb-15">
+              <div className="footer-newsletter float-xl-end">
+                <h5 className="footer-title">Subscribe Newsletter</h5>
+                <form action="#">
                 <input type="email" placeholder="Enter your email address"/>
                 <button><i className="bi bi-arrow-right"></i></button>
               </form>
@@ -77,7 +77,7 @@ const FooterOne = () => {
                 <li><Link href="#">Contact Us</Link></li>
               </ul>
               <div className="copyright me-xl-4 lg-mt-10 order-lg-first">
-                Copyright @{new Date().getFullYear()} babun inc.
+                Copyright @{new Date().getFullYear()} EWBS Excellence Business Services LLC.
               </div>
             </div>
           </div>

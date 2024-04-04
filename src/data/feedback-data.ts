@@ -56,21 +56,18 @@ export const feedback_one = [
         user: user_1,
         name: 'Daniel Brown',
         location: 'CEO & Founder of Play-Create Ltd',
-        desc: `EWBS has been absolutely brilliant from start to finish. So responsive and helpful. I couldn't recommend enough. A five star service.`
+        desc: `"EWBS has been absolutely brilliant from start to finish. So responsive and helpful. I couldn't recommend enough. A five star service."`
     },
     {
         id: 2,
-        user: user_1,
-        name: 'Mark John',
-        location: 'CEO & Head of Apple Tech Inc.',
-        desc: `"Lorem ipsum, dolor sit amet consectetur elit. Asperiores unde inventore tenetur. Accusantium tenetur id cupiditate quibusdam."`
+        name: 'Dhaval Chauhan',
+        desc: `"I recently had the pleasure of using EWBS services to apply for a business trade license, and I am beyond impressed with the experience."`
     },
     {
         id: 3,
-        user: user_1,
-        name: 'James Bond.',
-        location: 'CEO & Head of Pixel Tech Inc.',
-        desc: `"Efficient problem-solving, insightful market analysis, and actionable plans made the consulting experience invaluable to our business's success."`
+        name: 'Zain Abideen',
+        location: 'CEO & Head of Bell Curve Technologies FZE',
+        desc: `"EWBS has been an excellent partner to our kick start. They have provided seamless support right from start till end and have been available to resolve queries."`
     }
 ]
 // feedback one end

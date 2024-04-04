@@ -25,11 +25,11 @@ const FooterFour = () => {
             <ul className="style-none">
               <li className="d-flex align-items-center">
                 <Image src={icon_1} alt="icon" className="lazy-img icon me-3"/>
-                <Link href="#">babuninc@company.com</Link>
+                <Link href="#">info@ewbsbusiness.ae</Link>
               </li>
               <li className="d-flex align-items-center">
                 <Image src={icon_2} alt="icon" className="lazy-img icon me-3"/>
-                <Link href="#">+757 699-4478</Link>
+                <Link href="#">+971 42 559 901</Link>
               </li>
             </ul>
           </div>
@@ -54,24 +54,25 @@ const FooterFour = () => {
             </ul>
           </div>
           <div className="col-xxl-2 col-lg-3 col-sm-4 mb-20">
-            <h5 className="footer-title">Support</h5>
+            <h5 className="footer-title">Freezones</h5>
             <ul className="footer-nav-link style-none">
-              <li><Link href="/contact">Terms of use</Link></li>
-              <li><Link href="/contact">Terms & conditions</Link></li>
-              <li><Link href="/contact">Privacy</Link></li>
-              <li><Link href="/contact">Cookie policy</Link></li>
+              <li><Link href="/freezones/dubai">Dubai Freezone</Link></li>
+              <li><Link href="/freezones/shams">Shams Freezone</Link></li>
+              <li><Link href="/freezones/amc">AMC Freezone</Link></li>
+              <li><Link href="/freezones/rakez">Rakez Freezone</Link></li>
+              <li><Link href="/freezones/ifza">Ifza Freezone</Link></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div className="container">
-      <div className="bottom-footer">
-        <div className="row">
-          <div className="col-xl-4 col-lg-3 order-lg-3 mb-15">
-            <ul className="style-none d-flex align-items-center justify-content-center justify-content-lg-end social-icon">
-             <FooterSocial/>
-            </ul>
+      <div className="container">
+        <div className="bottom-footer">
+          <div className="row">
+            <div className="col-xl-4 col-lg-3 order-lg-3 mb-15">
+              <ul className="style-none d-flex align-items-center justify-content-center justify-content-lg-end social-icon">
+                <FooterSocial/>
+              </ul>
           </div>
           <div className="col-xl-4 col-lg-6 order-lg-2 mb-15">
             <ul className="style-none bottom-nav d-flex justify-content-center order-lg-last">
@@ -82,7 +83,7 @@ const FooterFour = () => {
           </div>
           <div className="col-xl-4 col-lg-3 order-lg-1 mb-15">
             <div className="copyright text-center text-lg-start order-lg-first">
-              Copyright @{new Date().getFullYear()} babun inc.
+              Copyright @{new Date().getFullYear()} EWBS Excellence Business Services LLC.
             </div>
           </div>
         </div>

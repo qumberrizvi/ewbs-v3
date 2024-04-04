@@ -45,7 +45,7 @@ const TeamSectionTwo = () => {
           </div>
 
           <div className="section-btn md-mt-40">
-            <Link href="/team-v1"
+            <Link href="/team"
               className="btn-nine rounded-circle d-inline-flex align-items-center justify-content-center tran3s"
             >
               <i className="bi bi-arrow-up-right"></i>

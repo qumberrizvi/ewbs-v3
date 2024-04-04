@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 const NewsletterBanner = ({ style_2 = false }: { style_2?: boolean }) => {
   return (
@@ -24,12 +23,6 @@ const NewsletterBanner = ({ style_2 = false }: { style_2?: boolean }) => {
                       <i className="bi bi-arrow-right"></i>
                     </button>
                   </div>
-                  <p className="text-center text-lg-end m0 pt-5">
-                    Already subscribed?{" "}
-                    <Link href="#" className="text-dark fw-500">
-                      Unsubscribe
-                    </Link>
-                  </p>
                 </form>
               </div>
             </div>
