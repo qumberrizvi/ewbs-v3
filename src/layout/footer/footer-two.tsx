@@ -42,7 +42,6 @@ const FooterTwo = () => {
               <ul className="footer-nav-link style-none">
                 <li><Link href="/about-us-2">About us</Link></li>
                 <li><Link href="/blog-grid">Blogs</Link></li>
-                {/*<li><Link href="/faq">FAQs</Link></li>*/}
                 <li><Link href="/contact">Contact</Link></li>
               </ul>
             </div>
