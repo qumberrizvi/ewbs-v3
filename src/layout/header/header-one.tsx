@@ -18,15 +18,15 @@ const HeaderOne = () => {
       <header className={`theme-main-menu menu-overlay menu-style-two sticky-menu ${sticky?'fixed':''}`}>
         <div className="gap-fix info-row">
           <div className="d-md-flex justify-content-between">
-            <div className="greetings text-center"><span className="opacity-50">Hello!!</span> <span className="fw-500">Welcome to babun.</span></div>
+            <div className="greetings text-center"><span className="opacity-50">Hello!</span> <span className="fw-500">Welcome to EWBS.</span></div>
             <ul className="style-none d-none d-md-flex contact-info">
               <li className="d-flex align-items-center">
                 <Image src={icon_1} alt="icon" className="lazy-img icon me-2" /> 
-                <Link href="mailto:babuninc@company.com" className="fw-500">babuninc@company.com</Link>
+                <Link href="mailto:info@ewbsbusiness.ae" className="fw-500">info@ewbsbusiness.ae</Link>
                 </li>
               <li className="d-flex align-items-center">
                 <Image src={icon_2} alt="icon" className="lazy-img icon me-2" /> 
-                <Link href="tel:+757 699-4478" className="fw-500">+757 699-4478</Link>
+                <Link href="tel:+971 42 559 901" className="fw-500">+971 42 559 901</Link>
                 </li>
             </ul>
           </div>
@@ -41,18 +41,7 @@ const HeaderOne = () => {
               </div>
 
               <div className="right-widget order-lg-3 ms-auto">
-                <ul className="d-flex align-items-center style-none">
-                  <li className="d-flex align-items-center login-btn-one me-3 me-md-0">
-                    <Image src={icon_3} alt="icon" className="lazy-img icon me-2" />
-                    <Link href="#" data-bs-toggle="modal" data-bs-target="#loginModal" className="fw-500">Login</Link>
-                  </li>
-                  <li className="d-none d-md-inline-block ms-3 ms-lg-5 me-3 me-lg-0">
-                    <Link href="#" data-bs-toggle="modal" data-bs-target="#loginModal" className="signup-btn-one icon-link">
-                      <span>Signup</span>
-                      <div className="icon rounded-circle d-flex align-items-center justify-content-center"><i className="bi bi-arrow-right"></i></div>
-                    </Link>
-                  </li>
-                </ul>
+
               </div>
               <nav className="navbar navbar-expand-lg p0 ms-lg-5 order-lg-2">
                 <button className="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse"

@@ -25,11 +25,11 @@ const FooterFour = () => {
             <ul className="style-none">
               <li className="d-flex align-items-center">
                 <Image src={icon_1} alt="icon" className="lazy-img icon me-3"/>
-                <Link href="#">babuninc@company.com</Link>
+                <Link href="#">info@ewbsbusiness.ae</Link>
               </li>
               <li className="d-flex align-items-center">
                 <Image src={icon_2} alt="icon" className="lazy-img icon me-3"/>
-                <Link href="#">+757 699-4478</Link>
+                <Link href="#">+971 42 559 901</Link>
               </li>
             </ul>
           </div>

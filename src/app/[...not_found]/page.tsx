@@ -25,12 +25,11 @@ const NotFound = () => {
             <h1 className="font-magnita">404</h1>
             <h2 className="fw-bold">Page Not Found</h2>
             <p className="text-lg mb-45">
-              Publishing industries for previewing layouts & visual mockups
-              used.
+              Looks like you got lost. Looking to setup your own business?
             </p>
             <div>
               <Link href="/" className="btn-four">
-                Go Back
+                {"Let\'s"} Go
               </Link>
             </div>
             <Image src={ils_1} alt="shape" className="lazy-img shapes shape_01"/>

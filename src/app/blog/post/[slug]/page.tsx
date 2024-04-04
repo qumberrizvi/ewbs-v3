@@ -26,7 +26,7 @@ const BlogDetailsPage = ({ params }: { params: { slug: string } }) => {
         <main>
           {/* breadcrumb start */}
           <BreadcrumbOne
-            title="EWBS Blog Page"
+            title="Explore our News"
             subtitle="Meet our experts, guiding you through financial intricacies with precision"
             page="Blog"
             bg_img={blog_bg}

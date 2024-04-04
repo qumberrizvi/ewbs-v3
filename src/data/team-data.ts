@@ -7,16 +7,6 @@ import djamel from "@/assets/images/media/djamel.jpeg";
 import iqra from "@/assets/images/media/iqra.jpeg";
 import diana from "@/assets/images/media/diana.jpeg";
 import nihal from "@/assets/images/media/nihal.jpeg";
-// team 3
-import team_9 from "@/assets/images/media/img_27.jpg";
-import team_10 from "@/assets/images/media/img_28.jpg";
-import team_11 from "@/assets/images/media/img_29.jpg";
-import team_12 from "@/assets/images/media/img_30.jpg";
-// team page
-import team_13 from "@/assets/images/media/img_38.jpg";
-import team_14 from "@/assets/images/media/img_39.jpg";
-import team_15 from "@/assets/images/media/img_40.jpg";
-import team_16 from "@/assets/images/media/img_41.jpg";
 
 const team_data: ITeam[] = [
   {
@@ -24,6 +14,8 @@ const team_data: ITeam[] = [
     img: djamel,
     name: "Djamel Eddine",
     designation: "Senior Business Consultant",
+    phone: "+971545833103",
+    email: "djamel@ewbsbusiness.ae",
     page: "home",
   },
   {
@@ -31,6 +23,8 @@ const team_data: ITeam[] = [
     img: ashar,
     name: "Ashar Mazhar",
     designation: "Business Consultant",
+    phone: "+971549983855",
+    email: "mazhar@ewbsbusiness.ae",
     page: "home",
   },
   {
@@ -38,6 +32,8 @@ const team_data: ITeam[] = [
     img: renu,
     name: "Renu Gilhotra",
     designation: "Business Consultant",
+    phone: "+971565075990",
+    email: "renu@ewbsbusiness.ae",
     page: "home",
   },
   {
@@ -45,6 +41,8 @@ const team_data: ITeam[] = [
     img: arsalan,
     name: "Arslan Rashid",
     designation: "Business Consultant",
+    phone: "+971505737880",
+    email: "arslan@ewbsbusiness.ae",
     page: "home",
   },
   {
@@ -52,6 +50,8 @@ const team_data: ITeam[] = [
     img: jasim,
     name: "Jasim Muhammad Fiaz",
     designation: "Business Consultant",
+    phone: "+971565336880",
+    email: "jasim@ewbsbusiness.ae",
     page: "any",
   },
   {
@@ -59,6 +59,8 @@ const team_data: ITeam[] = [
     img: iqra,
     name: "Iqra Jassim",
     designation: "Business Consultant",
+    phone: "+971547918890",
+    email: "iqra@ewbsbusiness.ae",
     page: "any",
   },
   {
@@ -66,6 +68,8 @@ const team_data: ITeam[] = [
     img: diana,
     name: "Diana Lopez",
     designation: "Business Consultant",
+    phone: "+971542898155",
+    email: "diana@ewbsbusiness.ae",
     page: "any",
   },
   {
@@ -73,65 +77,10 @@ const team_data: ITeam[] = [
     img: nihal,
     name: "Nihal Shakkir",
     designation: "Business Consultant",
+    phone: "+971565055858",
+    email: "nihal@ewbsbusiness.ae",
     page: "any",
   },
-  // {
-  //   id: 9,
-  //   img: team_9,
-  //   name: "Stormrider",
-  //   designation: "Owner & Founder",
-  //   page: "any",
-  // },
-  // {
-  //   id: 10,
-  //   img: team_10,
-  //   name: "Frostfall",
-  //   designation: "Project Manager",
-  //   page: "any",
-  // },
-  // {
-  //   id: 11,
-  //   img: team_11,
-  //   name: "Shadowbrook",
-  //   designation: "Lead Product Design",
-  //   page: "any",
-  // },
-  // {
-  //   id: 12,
-  //   img: team_12,
-  //   name: "Emberstone",
-  //   designation: "UI Design",
-  //   page: "any",
-  // },
-  // // team page
-  // {
-  //   id: 13,
-  //   img: team_13,
-  //   name: "Starfire",
-  //   designation: "Manager",
-  //   page: "any",
-  // },
-  // {
-  //   id: 14,
-  //   img: team_14,
-  //   name: "Thunderstrike",
-  //   designation: "Marketing Expert",
-  //   page: "any",
-  // },
-  // {
-  //   id: 15,
-  //   img: team_15,
-  //   name: "Silverstone",
-  //   designation: "Analysis",
-  //   page: "any",
-  // },
-  // {
-  //   id: 16,
-  //   img: team_16,
-  //   name: "Ravenshadow",
-  //   designation: "Senior Officer",
-  //   page: "any",
-  // },
 ];
 
 export default team_data;

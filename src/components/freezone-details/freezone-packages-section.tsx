@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import {IFreezonePackage} from "@/data/freezone-data";
 
 
 // pricing card item
@@ -9,7 +10,7 @@ type IProps = {
     title: string;
     price: number;
     lists: string[];
-    packageSetter:  React.Dispatch<React.SetStateAction<number | null>>
+    packageSetter: React.Dispatch<React.SetStateAction<number | null>>
 };
 
 function PricingCardItem({title, price, lists, packageSetter}: IProps) {
@@ -39,61 +40,28 @@ function PricingCardItem({title, price, lists, packageSetter}: IProps) {
 
 // pricing card item
 type IPackagesProps = {
-    packageSetter:  React.Dispatch<React.SetStateAction<number | null>>
+    packageSetter: React.Dispatch<React.SetStateAction<number | null>>,
+    packages: IFreezonePackage[];
 };
 
-function FreezonePackagesSection({packageSetter}: IPackagesProps) {
+function FreezonePackagesSection({packageSetter, packages}: IPackagesProps) {
     return (
         <div className="tab-content mt-50 md-mt-30">
             <div className="row gx-xl-5">
-                <div className="col-md-4 mb-65 md-mb-30">
-                    <PricingCardItem
-                        title="1 Visa"
-                        price={12000}
-                        lists={[
-                            "Business License for 1 year",
-                            "1 Investor visa Included",
-                            "Free Meeting room access",
-                            "Free Dubai office address",
-                            "100% Ownership",
-                            "Free PRO Services",
-                            "Free Company Stamp",
-                            "Free P.O.Box",
-                        ]}
-                        packageSetter={packageSetter}
-                    />
-                </div>
-                <div className="col-md-4 mb-65 md-mb-30">
-                    <PricingCardItem
-                        title="2 Visa"
-                        price={2000}
-                        lists={[
-                            "Business License for 1 year",
-                            "2 Investor visa for 2 years",
-                            "Free Meeting room access",
-                            "Free Dubai office address",
-                            "100% Ownership",
-                            "Free PRO Services",
-                            "Free Company Stamp",
-                            "Free P.O.Box",
-                        ]}
-                        packageSetter={packageSetter}
-                    />
-                </div>
-                <div className="col-md-4 mb-65 md-mb-30">
-                    <PricingCardItem
-                        title="10 Years"
-                        price={95000}
-                        lists={[
-                            "1 Investor visa for 10 years",
-                            "Business License for 10 Years",
-                            "100% Guaranteed Bank Account",
-                            "Installments based on eligibility",
-                            "Inclusive of benefits from the other 2 packages",
-                        ]}
-                        packageSetter={packageSetter}
-                    />
-                </div>
+                {packages.map((_package, index) => (
+
+                    <div className="col-md-4 mb-65 md-mb-30"
+                         key={`freezone-package-${index}`}>
+                        <PricingCardItem
+                            title={_package.title}
+                            price={_package.price}
+                            lists={_package.list}
+                            packageSetter={packageSetter}
+
+
+                        />
+                    </div>
+                ))}
             </div>
         </div>
     );
