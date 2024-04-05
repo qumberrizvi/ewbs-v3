@@ -46,6 +46,7 @@ const imgStyle = {
   height:'auto'
 }
 const ServiceDetailsArea = () => {
+  // noinspection HtmlUnknownTarget
   return (
     <div className="service-details mt-150 lg-mt-80 mb-100 lg-mb-80">
       <div className="container">
