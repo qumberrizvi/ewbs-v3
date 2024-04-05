@@ -41,8 +41,8 @@ const FreezoneDetailsArea = ({freezone}: IProp) => {
                     <div className="d-lg-flex align-items-center">
                         <h3>Freezone <span>Details</span></h3>
                         <ul className="style-none d-md-flex flex-fill ps-lg-5">
-                            <ListItem icon={icon_2} text='Zone Name' sm_text={freezone.zoneName}/>
-                            <ListItem icon={icon_3} text='Zone Type' sm_text='Free Zone'/>
+                            <ListItem icon={icon_2} text='Regulation' sm_text={freezone.zoneName}/>
+                            <ListItem icon={icon_3} text='Type' sm_text='Free Zone'/>
                         </ul>
                     </div>
                 </div>
