@@ -4,6 +4,8 @@ import {StaticImageData} from 'next/image';
 import icon_5 from '@/assets/images/icon/icon_06.svg';
 import icon_6 from '@/assets/images/icon/icon_07.svg';
 import icon_7 from '@/assets/images/icon/icon_08.svg';
+import icon_95 from '@/assets/images/icon/icon_95.svg';
+import icon_23 from '@/assets/images/icon/icon_23.svg';
 // home 3
 // home 4
 import icon_12 from '@/assets/images/icon/icon_40.svg';
@@ -59,11 +61,32 @@ const service_data: IService[] = [
         page: 'services'
     },
     {
-        id: 14,
+        id: 6,
         icon: icon_14,
         title: 'PRO Services',
         desc: 'Streamline government-related processes, minimising administrative burdens and ensuring compliance.',
         page: 'services'
+    },
+    {
+        id: 7,
+        icon: icon_95,
+        title: 'Company Liquidation',
+        desc: 'In the event of liquidation, our dedicated team offers comprehensive support and guidance to facilitate a smooth process.',
+        page: 'services',
+    },
+    {
+        id: 8,
+        icon: icon_6,
+        title: 'Document Attestation',
+        desc: 'Document attestation services, ensuring the authenticity and legality of your important business documents.',
+        page: 'services',
+    },
+    {
+        id: 9,
+        icon: icon_23,
+        title: 'Real Estate',
+        desc: 'To supporting business expansion, we provide real estate services to help you find the ideal commercial space.',
+        page: 'services',
     },
 ]
 
