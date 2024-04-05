@@ -65,7 +65,7 @@ const Navbar = ({logo_white=false}:{logo_white?:boolean}) => {
               </a>
               <ul className="dropdown-menu">
                 <li className="row gx-1">
-                  {menu.mega_menus?.map((mm, i) => (
+                  {menu.mega_menus?.map((mm, _i) => (
                     <div key={mm.id} className="col-lg-4">
                       <div className="menu-column">
                         <ul className="style-none mega-dropdown-list">
@@ -95,8 +95,8 @@ const Navbar = ({logo_white=false}:{logo_white?:boolean}) => {
         <ul className="style-none contact-info m0 pt-30">
           <li className="d-flex align-items-center p0 mt-15">
             <Image src={icon_1} alt="icon" className="lazy-img icon me-2" />
-            <Link href="mailto:info@ewbsbusiness.com" className="fw-500">
-              info@ewbsbusiness.com
+            <Link href="mailto:info@ewbsbusiness.ae" className="fw-500">
+              info@ewbsbusiness.ae
             </Link>
           </li>
           <li className="d-flex align-items-center p0 mt-15">
