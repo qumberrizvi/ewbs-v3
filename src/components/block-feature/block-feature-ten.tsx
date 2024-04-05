@@ -50,7 +50,7 @@ const BlockFeatureTen = () => {
             >
               <CardItem
                 icon={icon_2}
-                title="Loan Facility"
+                title="Flexible Payments"
                 subtitle="Earning potential grows with dedication, innovation, & with our instruction from expert."
               />
             </div>

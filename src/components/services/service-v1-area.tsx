@@ -63,7 +63,7 @@ const ServiceOneArea = () => {
                                               subtitle='Cost effective solution for ensuring compliance'/>
                                 </div>
                                 <div className="col-sm-6 d-flex wow fadeInUp" data-wow-delay="0.3s">
-                                    <CardItem icon={icon_5} title='Loan Facility'
+                                    <CardItem icon={icon_5} title='Flexible Payments'
                                               subtitle='Payment in installments available through Tabby'/>
                                 </div>
                             </div>

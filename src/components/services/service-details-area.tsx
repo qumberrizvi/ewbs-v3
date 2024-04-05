@@ -101,7 +101,7 @@ const ServiceDetailsArea = () => {
               <div className="service-nav-item">
                 <ul className="style-none">
                   <ServiceNav icon={icon_1} title='Multiple Accounts' active={true}/>
-                  <ServiceNav icon={icon_2} title='Loan Facility'/>
+                  <ServiceNav icon={icon_2} title='Flexible Payments'/>
                   <ServiceNav icon={icon_3} title='Expense Track'/>
                   <ServiceNav icon={icon_4} title='DPS & FDR'/>
                   <ServiceNav icon={icon_5} title='International Account'/>
