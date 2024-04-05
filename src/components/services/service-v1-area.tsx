@@ -11,7 +11,7 @@ import shape from '@/assets/images/shape/shape_05.svg';
 import service_data from '@/data/service-data';
 import FeedbackOne from '../feedback/feedback-one';
 import PartnersSliderOne from '../partners/partners-slider-one';
-import FancyBannerFive from '../fancy-banner/fancy-banner-five';
+// import FancyBannerFive from '../fancy-banner/fancy-banner-five';
 import FaqSectionOne from '../faq/faq-section-one';
 
 // card item 
@@ -29,6 +29,7 @@ function CardItem({icon, title, subtitle}: { icon: StaticImageData; title: strin
 
 const ServiceOneArea = () => {
     const services = service_data.filter(s => s.page);
+    // noinspection HtmlUnknownTarget
     return (
         <>
             {/* text feature start */}
@@ -118,7 +119,7 @@ const ServiceOneArea = () => {
             {/* partners logo end */}
 
             {/* fancy banner start */}
-            <FancyBannerFive style_2={true}/>
+            {/*<FancyBannerFive style_2={true}/>*/}
             {/* fancy banner end */}
 
             {/* faq start */}
