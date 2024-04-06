@@ -36,7 +36,7 @@ const menu_data: IMenu[] = [
             id:2,
             menus:[
               {link:'/about-us',title:'About Us V-1'},
-              {link:'/about-us-2',title:'About Us V-2'},
+              {link:'/about-us',title:'About Us V-2'},
               {link:'/testimonial',title:'Testimonial'},
               {link:'/pricing',title:'Pricing'},
               {link:'/faq',title:'FAQ’s'},

@@ -20,7 +20,7 @@ const FooterFour = () => {
               </Link>
             </div> 
             <p className="mb-55 md-mb-30">
-              2190 Urban Terrace, Mirpur, Equal <br/>Licensed in 50 states.
+              Office 903, 9th floor, Aspin Commercial Tower, Shaikh Zayed Road, Dubai, UAE
             </p>
             <ul className="style-none">
               <li className="d-flex align-items-center">
@@ -37,18 +37,15 @@ const FooterFour = () => {
             <h5 className="footer-title">Links</h5>
             <ul className="footer-nav-link style-none">
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/pricing">Pricing Plan</Link></li>
               <li><Link href="/about-us">About us</Link></li>
               <li><Link href="/services">Our services</Link></li>
-              <li><Link href="/project-v1">Portfolio</Link></li>
-              <li><Link href="/service-v2">Features</Link></li>
             </ul>
           </div>
           <div className="col-lg-2 col-sm-4 mb-20">
             <h5 className="footer-title">Company</h5>
             <ul className="footer-nav-link style-none">
-              <li><Link href="/about-us-2">About us</Link></li>
-              <li><Link href="/blog-grid">Blogs</Link></li>
+              <li><Link href="/about-us">About us</Link></li>
+              <li><Link href="/blog">Blogs</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>

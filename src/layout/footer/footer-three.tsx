@@ -36,8 +36,8 @@ const FooterThree = ({style_2}:{style_2?:boolean}) => {
 						<div className="col-lg-2 col-sm-4 mb-20">
 							<h5 className="footer-title">Company</h5>
 							<ul className="footer-nav-link style-none">
-								<li><Link href="/about-us-2">About us</Link></li>
-								<li><Link href="/blog-grid">Blogs</Link></li>
+								<li><Link href="/about-us">About us</Link></li>
+								<li><Link href="/blog">Blogs</Link></li>
 								<li><Link href="/contact">Contact</Link></li>
 							</ul>
 						</div>
