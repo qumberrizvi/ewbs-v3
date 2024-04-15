@@ -9,7 +9,7 @@ const BlogItemTwo = ({ blog }: { blog: IBlog }) => {
         <div className="post-info">
           <span className="fw-500 text-dark">{blog.author} -</span> {blog.date}
         </div>
-        <Link href={`/blog-details/${blog.id}`} className="mt-15">
+        <Link href={`/blog/post/${blog.slug}`} className="mt-15">
           <h4 className="tran3s blog-title">{blog.title}</h4>
         </Link>
       </div>
@@ -17,7 +17,7 @@ const BlogItemTwo = ({ blog }: { blog: IBlog }) => {
         className="post-img position-relative d-flex justify-content-end align-items-end m0"
         style={{ backgroundImage: `url(${blog.img.src})` }}
       >
-        <Link href={`/blog-details/${blog.id}`}
+        <Link href={`/blog/post/${blog.slug}`}
           className="round-btn stretched-link rounded-circle d-flex align-items-center justify-content-center tran3s"
         >
           <i className="bi bi-arrow-up-right"></i>

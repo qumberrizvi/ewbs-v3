@@ -13,7 +13,6 @@ import TextFeatureThree from "@/components/text-feature/text-feature-three";
 import FeedbackOne from "@/components/feedback/feedback-one";
 import PartnersSliderOne from "@/components/partners/partners-slider-one";
 import TeamSectionThree from "@/components/team/team-section-three";
-import HomeFourBlogs from "@/components/blogs/home-4-blogs";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 
 export const metadata: Metadata = {
@@ -67,17 +66,13 @@ const AboutUsPage = () => {
           <TeamSectionThree />
           {/* team three end */}
 
-          {/* blogs start */}
-          <HomeFourBlogs cls="mt-180 lg-mt-80 mb-180 lg-mb-80" />
-          {/* blogs end */}
-
           {/* fancy banner three start */}
           <FancyBannerThree />
           {/* fancy banner three end */}
 
-          {/* news letter start */}
+          {/* newsletter start */}
           <NewsletterBanner />
-          {/* news letter end */}
+          {/* newsletter end */}
         </main>
 
         {/* footer start */}
