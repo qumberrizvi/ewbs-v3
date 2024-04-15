@@ -69,6 +69,7 @@ const FooterThree = ({style_2}:{style_2?:boolean}) => {
 						<div className="col-xl-4 col-lg-6 order-lg-2 mb-15">
 							<ul className="style-none bottom-nav d-flex justify-content-center order-lg-last">
 								<li><Link href="/about-us">About</Link></li>
+								<li><Link href="/blog">Blog</Link></li>
 								<li><Link href="/contact">Contact Us</Link></li>
 							</ul>
 						</div>

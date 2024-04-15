@@ -29,6 +29,7 @@ const FooterOne = () => {
             <ul className="footer-nav-link style-none">
               <li><Link href="/">Home</Link></li>
               <li><Link href="/about-us">About us</Link></li>
+              <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/services">Our services</Link></li>
             </ul>
           </div>
@@ -36,7 +37,7 @@ const FooterOne = () => {
             <h5 className="footer-title">Company</h5>
             <ul className="footer-nav-link style-none">
               <li><Link href="/about-us">About us</Link></li>
-              <li><Link href="/blog">Blogs</Link></li>
+              <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
@@ -72,7 +73,8 @@ const FooterOne = () => {
             <div className="d-xl-flex align-items-center">
               <ul className="style-none bottom-nav d-flex flex-wrap justify-content-center justify-content-lg-start order-lg-last">
                 <li><Link href="/about-us">About</Link></li>
-                <li><Link href="#">Contact Us</Link></li>
+                <li><Link href="/blog">Blog</Link></li>
+                <li><Link href="/contact-us">Contact Us</Link></li>
               </ul>
               <div className="copyright me-xl-4 lg-mt-10 order-lg-first">
                 Copyright @{new Date().getFullYear()} EWBS Excellence Business Services LLC.
