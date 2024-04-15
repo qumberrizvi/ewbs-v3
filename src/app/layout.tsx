@@ -4,6 +4,7 @@ import {Providers} from "@/redux/provider";
 import {GoogleAnalytics} from "@/components/libraries/google-analytics";
 import {CallPage} from "@/components/libraries/call-page";
 import {WhatsWidget} from "@/components/libraries/whats-widget";
+import {SpeedInsights} from "@vercel/speed-insights/next"
 
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
         <WhatsWidget/>
         <CallPage/>
         <GoogleAnalytics/>
+        <SpeedInsights/>
         </body>
         </html>
     );
