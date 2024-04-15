@@ -43,11 +43,11 @@ const FooterOne = () => {
           <div className="col-xl-2 col-md-3 col-sm-4 mb-20">
             <h5 className="footer-title">Freezones</h5>
             <ul className="footer-nav-link style-none">
-              <li><Link href="/freezones/dubai">Dubai Freezone</Link></li>
-              <li><Link href="/freezones/shams">Shams Freezone</Link></li>
-              <li><Link href="/freezones/amc">AMC Freezone</Link></li>
-              <li><Link href="/freezones/rakez">Rakez Freezone</Link></li>
-              <li><Link href="/freezones/ifza">Ifza Freezone</Link></li>
+              <li><Link href="/freezone/dubai">Dubai Freezone</Link></li>
+              <li><Link href="/freezone/shams">Shams Freezone</Link></li>
+              <li><Link href="/freezone/amc">AMC Freezone</Link></li>
+              <li><Link href="/freezone/rakez">Rakez Freezone</Link></li>
+              <li><Link href="/freezone/ifza">Ifza Freezone</Link></li>
             </ul>
           </div>
         </div>
@@ -71,8 +71,7 @@ const FooterOne = () => {
             </Link>
             <div className="d-xl-flex align-items-center">
               <ul className="style-none bottom-nav d-flex flex-wrap justify-content-center justify-content-lg-start order-lg-last">
-                <li><Link href="#">Privacy & Terms</Link></li>
-                <li><Link href="#">Cookies</Link></li>
+                <li><Link href="/about-us">About</Link></li>
                 <li><Link href="#">Contact Us</Link></li>
               </ul>
               <div className="copyright me-xl-4 lg-mt-10 order-lg-first">

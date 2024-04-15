@@ -38,7 +38,7 @@ const BlockFeatureThree = () => {
                                 <div className="img-wrapper"></div>
                                 <div className="text-wrapper bg-white">
                                     <h3 className="block-title d-inline-block position-relative mt-40 mb-5 lg-mb-30">
-                                        <Link href="/about-us">
+                                        <Link href="/about-us" className="text-danger">
                                             Obtained a satisfaction rating exceeding 95% from
                                             <br className="d-none d-lg-block"/> our clients.
                                         </Link>

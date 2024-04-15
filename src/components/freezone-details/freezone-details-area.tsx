@@ -34,6 +34,9 @@ type IProp = {
 }
 
 const FreezoneDetailsArea = ({freezone}: IProp) => {
+    const listChunkSize = 3;
+    const numberOfChunks = Math.ceil(freezone.process.list.length / listChunkSize);
+
     return (
         <div className="project-details-one position-relative pb-150 lg-pb-80">
             <div className="project-info position-relative mb-150 lg-mb-80">
@@ -64,7 +67,7 @@ const FreezoneDetailsArea = ({freezone}: IProp) => {
                             <Image src={gallery_1} alt="gallery_img" className="lazy-img" style={imgStyle}/>
                         </div>
                         <div className="col-sm-4">
-                        <Image src={gallery_2} alt="gallery_img" className="lazy-img" style={imgStyle}/>
+                            <Image src={gallery_2} alt="gallery_img" className="lazy-img" style={imgStyle}/>
                             <Image src={gallery_3} alt="gallery_img" className="lazy-img" style={imgStyle}/>
                         </div>
                     </div>
@@ -76,13 +79,25 @@ const FreezoneDetailsArea = ({freezone}: IProp) => {
                 {freezone.process.descriptions.map((description, index) => (
                     <p key={`freezone-process-description-${index}`}>{description}</p>
                 ))}
-                <ul className="style-none list-item pb-20">
-                    {freezone.process.list.map((item, index) => (
-                        <li key={`freezone-process-li-${index}`}>{item}</li>
-                    ))}
-                </ul>
+                <div className="container row">
+                    {Array.from({length: numberOfChunks}, (_, index) => {
+                        const start = index * listChunkSize;
+                        const end = start + listChunkSize;
+                        const chunk = freezone.process.list.slice(start, end);
+
+                        // Render your JSX elements for each chunk
+                        return (
+                            <ul key={`freezone-process-ul-${index}`}
+                                className="style-none list-item pb-20 col-md-4 col-sm-12 col-lg-4">
+                                {chunk.map((item, itemIndex) => (
+                                    <li key={`freezone-process-li-${index}`}>{item}</li>
+                                ))}
+                            </ul>
+                        );
+                    })}
+                </div>
                 <div
-                    className="line-wrapper border-top border-bottom pt-20 pb-60 lg-pb-40 mt-60 lg-mt-40 mb-70 lg-mb-40">
+                    className="line-wrapper border-top border-bottom pt-20 pb-60 lg-pb-40 mt-60 lg-mt-40 lg-mb-40">
                     {/* project details feature start */}
                     <FreezoneDetailsSteps steps={freezone.process.steps}/>
                     {/* project details feature end */}

@@ -17,7 +17,7 @@ function FreezonePackagesContactWrapper({freezone}: IProp) {
 
     return (
         <>
-            <div className="pricing-section lg-pt-80 lg-pb-80">
+            <div className="pricing-section pt-0 pt-lg-4 lg-pb-80">
                 <div className="container">
                     {
                         (freezone.packageSection) && (
@@ -35,7 +35,7 @@ function FreezonePackagesContactWrapper({freezone}: IProp) {
                         )
                     }
                     <div className="contact-banner position-relative">
-                        <Image src={icon} alt="icon" className="lazy-img shapes screen_01"/>
+                        <Image src={icon} alt="icon" className="lazy-img shapes screen_01 d-none d-md-block"/>
                         <div className="row align-items-center justify-content-end">
                             <div className="col-lg-6">
                                 {

@@ -48,11 +48,11 @@ const FooterTwo = () => {
             <div className="col-xxl-2 col-lg-3 col-sm-4 mb-20">
               <h5 className="footer-title">Freezones</h5>
               <ul className="footer-nav-link style-none">
-                <li><Link href="/freezones/dubai">Dubai Freezone</Link></li>
-                <li><Link href="/freezones/shams">Shams Freezone</Link></li>
-                <li><Link href="/freezones/amc">AMC Freezone</Link></li>
-                <li><Link href="/freezones/rakez">Rakez Freezone</Link></li>
-                <li><Link href="/freezones/ifza">Ifza Freezone</Link></li>
+                <li><Link href="/freezone/dubai">Dubai Freezone</Link></li>
+                <li><Link href="/freezone/shams">Shams Freezone</Link></li>
+                <li><Link href="/freezone/amc">AMC Freezone</Link></li>
+                <li><Link href="/freezone/rakez">Rakez Freezone</Link></li>
+                <li><Link href="/freezone/ifza">Ifza Freezone</Link></li>
               </ul>
             </div>
           </div>

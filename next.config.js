@@ -4,27 +4,27 @@ const nextConfig = {
         return [
             {
                 source: '/rakez-freezone',
-                destination: '/freezones/rakez',
+                destination: '/freezone/rakez',
                 permanent: true,
             },
             {
                 source: '/Dubai-Freezone',
-                destination: '/freezones/dubai',
+                destination: '/freezone/dubai',
                 permanent: true,
             },
             {
                 source: '/shams-freezone',
-                destination: '/freezones/shams',
+                destination: '/freezone/shams',
                 permanent: true,
             },
             {
                 source: '/ajman-media-city-freezone',
-                destination: '/freezones/amc',
+                destination: '/freezone/amc',
                 permanent: true,
             },
             {
                 source: '/ifza-freezone',
-                destination: '/freezones/ifza',
+                destination: '/freezone/ifza',
                 permanent: true,
             },
             {
@@ -75,12 +75,12 @@ const nextConfig = {
             },
             {
                 source: '/shams-packages',
-                destination: '/freezones/shams',
+                destination: '/freezone/shams',
                 permanent: false,
             },
             {
                 source: '/sharjah-freezone',
-                destination: '/freezones/shams',
+                destination: '/freezone/shams',
                 permanent: false,
             },
             {

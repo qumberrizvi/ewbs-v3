@@ -2,6 +2,7 @@
 
 import ContactForm from "@/components/forms/contact-form";
 import React from "react";
+import {LeadForm} from "@/components/lead-form/lead-form";
 
 // pricing card item
 type IProps = {
@@ -16,7 +17,7 @@ function FreezoneContactSection({selectedPackage}: IProps) {
                 <div className="container">
                     <div className="row">
                         <div
-                            className="col-xxl-5 col-lg-6 ms-auto d-flex flex-column order-lg-last wow fadeInRight">
+                            className="col-xxl-5 col-lg-6 ms-auto d-flex flex-column order-lg-last wow fadeInRight pb-5rem">
                             <div>
                                 <div className="upper-title">Begin Your Journey</div>
                                 <h2>Connect with us today.</h2>
@@ -49,10 +50,11 @@ function FreezoneContactSection({selectedPackage}: IProps) {
                             </div>
                         </div>
                         <div
-                            className="col-xxl-6 col-lg-5 d-flex order-lg-first wow fadeInLeft bg-wrapper light-bg">
+                            className="col-xxl-6 col-lg-5 order-lg-first wow fadeInLeft bg-wrapper light-bg">
                             <div className="form-style-one">
                                 {/* form start */}
-                                <ContactForm selectedPackage={selectedPackage}/>
+                                {/*<ContactForm selectedPackage={selectedPackage}/>*/}
+                                <LeadForm></LeadForm>
                                 {/* form end */}
                             </div>
                         </div>

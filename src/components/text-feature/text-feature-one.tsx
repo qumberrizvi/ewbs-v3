@@ -112,7 +112,7 @@ const TextFeatureOne = ({style_2 = false}: { style_2?: boolean }) => {
                                 <CounterBlock num={1.2} text="k+" title="Happy Client Businesses" delay="0"/>
                                 <CounterBlock num={15} text="+" title="Advisors Ready to Help" delay="1"/>
                                 <CounterBlock num={4.7} text="★" title="Great Google Rating" delay="2"/>
-                                <CounterBlock num={100} text="k+" title="Dirhams of Revenue Generated" delay="3"/>
+                                <CounterBlock num={9} text="M+" title="Dirhams of Revenue Generated" delay="3"/>
                             </div>
                         </div>
                     </div>

@@ -259,7 +259,7 @@ export const freezoneData: IFreezone[] = [
                     list: [
                         "Licence Zero Visa Allocation",
                         "Free Dubai Office Address",
-                        "Free Company Stamp Bank Assistance",
+                        "Free Company Stamp",
                         "Free 2 Hours Meeting Room",
                         "Free Shared Dubai P.O. Box",
                     ]
@@ -270,7 +270,7 @@ export const freezoneData: IFreezone[] = [
                     list: [
                         "Licence One Visa Allocation",
                         "Free Dubai Office Address",
-                        "Free Company Stamp Bank Assistance",
+                        "Free Company Stamp",
                         "Free 2 Hours Meeting Room",
                         "Free Shared Dubai P.O. Box",
                     ],
@@ -281,7 +281,7 @@ export const freezoneData: IFreezone[] = [
                     list: [
                         "Licence Two Visa Allocation",
                         "Free Dubai Office Address",
-                        "Free Company Stamp Bank Assistance",
+                        "Free Company Stamp",
                         "Free 2 Hours Meeting Room",
                         "Free Shared Dubai P.O. Box",
                     ],
@@ -465,7 +465,7 @@ export const freezoneData: IFreezone[] = [
                     list: [
                         "Licence Zero Visa Allocation",
                         "Free Dubai Office Address",
-                        "Free Company Stamp Bank Assistance",
+                        "Free Company Stamp",
                         "Free 2 Hours Meeting Room",
                         "Free Shared Dubai P.O. Box",
                     ],
@@ -476,7 +476,7 @@ export const freezoneData: IFreezone[] = [
                     list: [
                         "Licence 1 Visa Allocation",
                         "Free Dubai Office Address",
-                        "Free Company Stamp Bank Assistance",
+                        "Free Company Stamp",
                         "Free 2 Hours Meeting Room",
                         "Free Shared Dubai P.O. Box",
                     ],
@@ -487,7 +487,7 @@ export const freezoneData: IFreezone[] = [
                     list: [
                         "Licence 2 Visa Allocation",
                         "Free Dubai Office Address",
-                        "Free Company Stamp Bank Assistance",
+                        "Free Company Stamp",
                         "Free 2 Hours Meeting Room",
                         "Free Shared Dubai P.O. Box",
                     ],
@@ -498,7 +498,7 @@ export const freezoneData: IFreezone[] = [
                     list: [
                         "Licence 3 Visa Allocation",
                         "Free Dubai Office Address",
-                        "Free Company Stamp Bank Assistance",
+                        "Free Company Stamp",
                         "Free 2 Hours Meeting Room",
                         "Free Shared Dubai P.O. Box",
                     ],
@@ -509,7 +509,7 @@ export const freezoneData: IFreezone[] = [
                     list: [
                         "Licence 4 Visa Allocation",
                         "Free Dubai Office Address",
-                        "Free Company Stamp Bank Assistance",
+                        "Free Company Stamp",
                         "Free 2 Hours Meeting Room",
                         "Free Shared Dubai P.O. Box",
                     ],
@@ -520,7 +520,7 @@ export const freezoneData: IFreezone[] = [
                     list: [
                         "Licence 5 Visa Allocation",
                         "Free Dubai Office Address",
-                        "Free Company Stamp Bank Assistance",
+                        "Free Company Stamp",
                         "Free 2 Hours Meeting Room",
                         "Free Shared Dubai P.O. Box",
                     ],
