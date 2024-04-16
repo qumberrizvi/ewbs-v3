@@ -17,6 +17,28 @@ const menu_data: IMenu[] = [
     },
     {
         id: 2,
+        title: 'Mainland',
+        link: '#',
+        dropdown: true,
+        dropdown_menus: [
+            {link: '/mainland/dubai', title: 'Dubai Mainland'},
+        ],
+    },
+    {
+        id: 3,
+        title: 'Freezone',
+        link: '#',
+        dropdown: true,
+        dropdown_menus: [
+            {link: '/freezone/dubai', title: 'Dubai Freezone'},
+            {link: '/freezone/shams', title: 'Shams Freezone'},
+            {link: '/freezone/amc', title: 'AMC Freezone'},
+            {link: '/freezone/rakez', title: 'Rakez Freezone'},
+            {link: '/freezone/ifza', title: 'Ifza Freezone'},
+        ],
+    },
+    {
+        id: 4,
         link: '/services',
         title: 'Services',
         /*mega_menu:true,
@@ -56,7 +78,7 @@ const menu_data: IMenu[] = [
         ]*/
     },
     {
-        id: 3,
+        id: 6,
         link: '/blog',
         title: 'Blog',
         /*dropdown:true,
@@ -67,7 +89,7 @@ const menu_data: IMenu[] = [
         ]*/
     },
     {
-        id: 4,
+        id: 7,
         link: '/about-us',
         title: 'About Us',
         /*dropdown:true,
@@ -80,7 +102,7 @@ const menu_data: IMenu[] = [
         ]*/
     },
     {
-        id: 5,
+        id: 8,
         link: '/contact',
         title: 'Contact'
     }

@@ -8,9 +8,13 @@ import gallery_1 from '@/assets/images/gallery/rakez.jpg';
 import gallery_2 from '@/assets/images/gallery/burj-from-creek.jpg';
 import gallery_3 from '@/assets/images/gallery/img_19.jpg';
 import FreezoneDetailsSteps from './freezone-details-steps';
-import FreezonePackagesContactWrapper from "@/components/freezone-details/freezone-packages-contact-wrapper";
+import FreezoneMainlandPackagesContactWrapper from "@/components/freezone-details/freezone-mainland-packages-contact-wrapper";
 import {IFreezone} from "@/data/freezone-data";
+import {IMainland} from "@/data/mainland-data";
 
+function capitalizeFirstLetter(string: string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 // list item
 function ListItem({icon, text, sm_text}: { icon: StaticImageData; text: string; sm_text: string }) {
@@ -30,22 +34,23 @@ const imgStyle = {
     height: 'auto'
 }
 type IProp = {
-    freezone: IFreezone;
+    data: IFreezone | IMainland;
+    type?: 'freezone' | 'mainland';
 }
 
-const FreezoneDetailsArea = ({freezone}: IProp) => {
+const FreezoneMainlandDetailsArea = ({data, type = 'freezone'}: IProp) => {
     const listChunkSize = 3;
-    const numberOfChunks = Math.ceil(freezone.process.list.length / listChunkSize);
+    const numberOfChunks = Math.ceil(data.process.list.length / listChunkSize);
 
     return (
         <div className="project-details-one position-relative pb-150 lg-pb-80">
             <div className="project-info position-relative mb-150 lg-mb-80">
                 <div className="inner-wrapper m-auto">
                     <div className="d-lg-flex align-items-center">
-                        <h3>Freezone <span>Details</span></h3>
+                        <h3>{capitalizeFirstLetter(type)} <span>Details</span></h3>
                         <ul className="style-none d-md-flex flex-fill ps-lg-5">
-                            <ListItem icon={icon_2} text='Regulation' sm_text={freezone.zoneName}/>
-                            <ListItem icon={icon_3} text='Type' sm_text='Free Zone'/>
+                            <ListItem icon={icon_2} text='Regulation' sm_text={data.zoneName}/>
+                            <ListItem icon={icon_3} text='Type' sm_text={capitalizeFirstLetter(type)}/>
                         </ul>
                     </div>
                 </div>
@@ -55,10 +60,10 @@ const FreezoneDetailsArea = ({freezone}: IProp) => {
                 <div>
                     <div className="upper-title">overview</div>
                     <h2>
-                        {freezone.overview.title}
+                        {data.overview.title}
                     </h2>
                 </div>
-                {freezone.overview.descriptions.map((description, index) => (
+                {data.overview.descriptions.map((description, index) => (
                     <p key={`freezone-overview-description-${index}`}>{description}</p>
                 ))}
                 <div className="img-gallery mb-60 lg-mb-40">
@@ -74,16 +79,16 @@ const FreezoneDetailsArea = ({freezone}: IProp) => {
                 </div>
                 <div>
                     <div className="upper-title">Process</div>
-                    <h2>{freezone.process.title}</h2>
+                    <h2>{data.process.title}</h2>
                 </div>
-                {freezone.process.descriptions.map((description, index) => (
+                {data.process.descriptions.map((description, index) => (
                     <p key={`freezone-process-description-${index}`}>{description}</p>
                 ))}
                 <div className="container row">
                     {Array.from({length: numberOfChunks}, (_, index) => {
                         const start = index * listChunkSize;
                         const end = start + listChunkSize;
-                        const chunk = freezone.process.list.slice(start, end);
+                        const chunk = data.process.list.slice(start, end);
 
                         // Render your JSX elements for each chunk
                         return (
@@ -99,14 +104,14 @@ const FreezoneDetailsArea = ({freezone}: IProp) => {
                 <div
                     className="line-wrapper border-top border-bottom pt-20 pb-60 lg-pb-40 mt-60 lg-mt-40 lg-mb-40">
                     {/* project details feature start */}
-                    <FreezoneDetailsSteps steps={freezone.process.steps}/>
+                    <FreezoneDetailsSteps steps={data.process.steps}/>
                     {/* project details feature end */}
                 </div>
-                <FreezonePackagesContactWrapper freezone={freezone}/>
+                <FreezoneMainlandPackagesContactWrapper data={data}/>
 
             </div>
         </div>
     );
 };
 
-export default FreezoneDetailsArea;
+export default FreezoneMainlandDetailsArea;

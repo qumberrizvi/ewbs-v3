@@ -44,12 +44,11 @@ type IPackagesProps = {
     packages: IFreezonePackage[];
 };
 
-function FreezonePackagesSection({packageSetter, packages}: IPackagesProps) {
+function FreezoneMainlandPackagesSection({packageSetter, packages}: IPackagesProps) {
     return (
         <div className="tab-content mt-50 md-mt-30">
             <div className="row gx-xl-5">
                 {packages.map((_package, index) => (
-
                     <div className="col-md-4 mb-65 md-mb-30"
                          key={`freezone-package-${index}`}>
                         <PricingCardItem
@@ -57,8 +56,6 @@ function FreezonePackagesSection({packageSetter, packages}: IPackagesProps) {
                             price={_package.price}
                             lists={_package.list}
                             packageSetter={packageSetter}
-
-
                         />
                     </div>
                 ))}
@@ -67,4 +64,4 @@ function FreezonePackagesSection({packageSetter, packages}: IPackagesProps) {
     );
 }
 
-export default FreezonePackagesSection;
+export default FreezoneMainlandPackagesSection;

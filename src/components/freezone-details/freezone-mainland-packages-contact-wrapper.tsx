@@ -4,15 +4,16 @@ import Image from "next/image";
 import icon from "@/assets/images/assets/ils_04.svg";
 import Link from "next/link";
 import React, {useState} from "react";
-import FreezonePackagesSection from "@/components/freezone-details/freezone-packages-section";
+import FreezoneMainlandPackagesSection from "@/components/freezone-details/freezone-mainland-packages-section";
 import FreezoneContactSection from "@/components/freezone-details/freezone-contact-section";
 import {IFreezone} from "@/data/freezone-data";
+import {IMainland} from "@/data/mainland-data";
 
 type IProp = {
-    freezone: IFreezone;
+    data: IFreezone | IMainland;
 }
 
-function FreezonePackagesContactWrapper({freezone}: IProp) {
+function FreezoneMainlandPackagesContactWrapper({data}: IProp) {
     const [selectedPackage, setSelectedPackage] = useState<number | null>(null);
 
     return (
@@ -20,17 +21,17 @@ function FreezonePackagesContactWrapper({freezone}: IProp) {
             <div className="pricing-section pt-0 pt-lg-4 lg-pb-80">
                 <div className="container">
                     {
-                        (freezone.packageSection) && (
+                        (data.packageSection) && (
                             <>
                                 <div className="row align-items-center">
                                     <div className="col-lg-7 text-center text-lg-start">
                                         <p className="text-lg pt-10 m0">
-                                            {freezone.packageSection.description}
+                                            {data.packageSection.description}
                                         </p>
                                     </div>
                                 </div>
-                                <FreezonePackagesSection packageSetter={setSelectedPackage}
-                                                         packages={freezone.packageSection.packages}/>
+                                <FreezoneMainlandPackagesSection packageSetter={setSelectedPackage}
+                                                                 packages={data.packageSection.packages}/>
                             </>
                         )
                     }
@@ -39,7 +40,7 @@ function FreezonePackagesContactWrapper({freezone}: IProp) {
                         <div className="row align-items-center justify-content-end">
                             <div className="col-lg-6">
                                 {
-                                    (freezone.packageSection) ?
+                                    (data.packageSection) ?
                                         (
                                             <h2>
                                                 Want a <span>custom pricing</span> plan for your business?
@@ -65,4 +66,4 @@ function FreezonePackagesContactWrapper({freezone}: IProp) {
     )
 }
 
-export default FreezonePackagesContactWrapper;
+export default FreezoneMainlandPackagesContactWrapper;

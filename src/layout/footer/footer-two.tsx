@@ -41,7 +41,7 @@ const FooterTwo = () => {
               <h5 className="footer-title">Company</h5>
               <ul className="footer-nav-link style-none">
                 <li><Link href="/about-us">About us</Link></li>
-                <li><Link href="/blog">Blogs</Link></li>
+                <li><Link href="/blog">Blog</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
               </ul>
             </div>
