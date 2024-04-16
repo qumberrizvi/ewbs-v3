@@ -42,37 +42,37 @@ const nextConfig = {
                 destination: '/services',
                 permanent: true,
             },
-            //     TODO: Add these pages, or make redirects permanent + move them above this comment:
             {
                 source: '/dubai-mainland-company',
-                destination: '/',
-                permanent: false,
+                destination: '/mainland/dubai',
+                permanent: true,
             },
             {
                 source: '/dubai-mainland-license',
-                destination: '/',
-                permanent: false,
+                destination: '/mainland/dubai',
+                permanent: true,
             },
             {
                 source: '/required-documents',
-                destination: '/',
-                permanent: false,
+                destination: '/mainland/dubai',
+                permanent: true,
             },
             {
                 source: '/professional-license',
-                destination: '/',
-                permanent: false,
+                destination: '/mainland/dubai',
+                permanent: true,
             },
             {
                 source: '/commercial-license',
-                destination: '/',
-                permanent: false,
+                destination: '/mainland/dubai',
+                permanent: true,
             },
             {
                 source: '/residency-visa',
-                destination: '/',
-                permanent: false,
+                destination: '/mainland/dubai',
+                permanent: true,
             },
+            //     TODO: Add these pages, or make redirects permanent + move them above this comment:
             {
                 source: '/shams-packages',
                 destination: '/freezone/shams',
@@ -85,11 +85,6 @@ const nextConfig = {
             },
             {
                 source: '/spcfz',
-                destination: '/',
-                permanent: false,
-            },
-            {
-                source: '/dubai-mainland-license',
                 destination: '/',
                 permanent: false,
             },
