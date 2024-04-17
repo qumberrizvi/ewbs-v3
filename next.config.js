@@ -105,6 +105,14 @@ const nextConfig = {
             },
         ];
     },
+    async rewrites() {
+        return [
+            {
+                source: '/(p|P)(r|R)(i|I)(v|V)(a|A)(c|C)(y|Y)(-)(p|P)(o|O)(l|L)(i|I)(c|C)(y|Y)',
+                destination: '/privacy-policy',
+            }
+        ]
+    },
     images: {
         domains: ['q.quora.com'],
     }
