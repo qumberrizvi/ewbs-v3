@@ -6,6 +6,7 @@ import {CallPage} from "@/components/libraries/call-page";
 import {WhatsWidget} from "@/components/libraries/whats-widget";
 import {SpeedInsights} from "@vercel/speed-insights/next"
 import {QuoraPixel} from "@/components/libraries/quora-pixel";
+import {LeadFeeder} from "@/components/libraries/lead-feeder";
 
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({
         <GoogleAnalytics/>
         <SpeedInsights/>
         <QuoraPixel/>
+        <LeadFeeder/>
         </body>
         </html>
     );
