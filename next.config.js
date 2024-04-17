@@ -103,12 +103,10 @@ const nextConfig = {
                 destination: '/',
                 permanent: false,
             },
-            {
-                source: '/Privacy-Policy',
-                destination: '/',
-                permanent: false,
-            },
         ];
+    },
+    images: {
+        domains: ['q.quora.com'],
     }
 }
 
