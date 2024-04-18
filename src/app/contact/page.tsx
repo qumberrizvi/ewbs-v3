@@ -6,7 +6,6 @@ import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import ContactArea from "@/components/contact/contact-area";
 import FooterThree from "@/layout/footer/footer-three";
 import shape from "@/assets/images/shape/shape_33.svg";
-import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 
 export const metadata: Metadata = {
   title: "Contact - EWBS",
@@ -32,10 +31,6 @@ const ContactPage = () => {
           {/* contact area start */}
           <ContactArea />
           {/* contact area end */}
-
-          {/* news letter start */}
-          <NewsletterBanner />
-          {/* news letter end */}
         </main>
 
         {/* footer start */}

@@ -4,7 +4,7 @@ import icon_1 from "@/assets/images/icon/icon_90.svg";
 import icon_2 from "@/assets/images/icon/icon_91.svg";
 import icon_3 from "@/assets/images/icon/envelope.svg";
 import icon_4 from "@/assets/images/assets/ils_07.svg";
-import ContactForm from "../forms/contact-form";
+import {LeadForm} from "@/components/lead-form/lead-form";
 
 // address block item
 function AddressBlock({
@@ -81,7 +81,7 @@ const ContactArea = () => {
               <div className="col-lg-7">
                 <div className="form-style-one ps-xl-5">
                   {/* form start */}
-                  <ContactForm />
+                  <LeadForm/>
                   {/* form end */}
                 </div>
               </div>

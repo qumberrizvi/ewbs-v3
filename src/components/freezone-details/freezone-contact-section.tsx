@@ -1,6 +1,5 @@
 "use client"
 
-import ContactForm from "@/components/forms/contact-form";
 import React from "react";
 import {LeadForm} from "@/components/lead-form/lead-form";
 
@@ -12,7 +11,6 @@ type IProps = {
 function FreezoneContactSection({selectedPackage}: IProps) {
     return (
         <>
-            <span className="position-absolute visually-hidden" id="contact-section"></span>
             <div className="text-feature-three text-feature-seven position-relative mt-120 lg-mt-80">
                 <div className="container">
                     <div className="row">
@@ -51,10 +49,11 @@ function FreezoneContactSection({selectedPackage}: IProps) {
                         </div>
                         <div
                             className="col-xxl-6 col-lg-5 order-lg-first wow fadeInLeft bg-wrapper light-bg">
+                            <span className="position-absolute visually-hidden" id="contact-section"></span>
                             <div className="form-style-one">
                                 {/* form start */}
                                 {/*<ContactForm selectedPackage={selectedPackage}/>*/}
-                                <LeadForm></LeadForm>
+                                <LeadForm/>
                                 {/* form end */}
                             </div>
                         </div>

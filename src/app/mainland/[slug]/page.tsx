@@ -23,7 +23,7 @@ const Mainland = ({params}: Props) => {
                     {/* breadcrumb start */}
                     <div
                         className="inner-banner-one pt-225 lg-pt-200 md-pt-150 pb-100 lg-pb-70 md-pb-30 position-relative"
-                        style={{backgroundImage: `url(${breadcrumb_bg.src})`}}
+                        style={{backgroundImage: `url(${mainland?.banner?.src || breadcrumb_bg.src})`}}
                     >
                         <div className="container position-relative">
                             <div className="row align-items-start">

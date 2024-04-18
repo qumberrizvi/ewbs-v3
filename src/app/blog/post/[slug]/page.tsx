@@ -9,7 +9,6 @@ import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import BlogDetailsArea from "@/components/blogs/blog-details/blog-details-area";
 import shape from "@/assets/images/shape/shape_35.svg";
 import blog_data from "@/data/blog-data";
-import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 
 export const metadata: Metadata = {
   title: "Blog Details Page",
@@ -50,10 +49,6 @@ const BlogDetailsPage = ({ params }: { params: { slug: string } }) => {
           {/* fancy banner three start */}
           <FancyBannerThree />
           {/* fancy banner three end */}
-
-          {/* news letter start */}
-          <NewsletterBanner />
-          {/* news letter end */}
         </main>
 
         {/* footer start */}

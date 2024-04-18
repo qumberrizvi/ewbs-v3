@@ -8,6 +8,7 @@ import FreezoneMainlandPackagesSection from "@/components/freezone-details/freez
 import FreezoneContactSection from "@/components/freezone-details/freezone-contact-section";
 import {IFreezone} from "@/data/freezone-data";
 import {IMainland} from "@/data/mainland-data";
+import FeedbackOne from "@/components/feedback/feedback-one";
 
 type IProp = {
     data: IFreezone | IMainland;
@@ -35,7 +36,7 @@ function FreezoneMainlandPackagesContactWrapper({data}: IProp) {
                             </>
                         )
                     }
-                    <div className="contact-banner position-relative">
+                    <div className="contact-banner position-relative bottom-border">
                         <Image src={icon} alt="icon" className="lazy-img shapes screen_01 d-none d-md-block"/>
                         <div className="row align-items-center justify-content-end">
                             <div className="col-lg-6">
@@ -53,12 +54,17 @@ function FreezoneMainlandPackagesContactWrapper({data}: IProp) {
                                 }
                             </div>
                             <div className="col-lg-4 text-center text-lg-end">
-                                <Link href="/contact" className="btn-four">
+                                <Link href="#contact-section" className="btn-four">
                                     Let’s Talk
                                 </Link>
                             </div>
                         </div>
                     </div>
+
+                    {/* feedback one start */}
+                    <FeedbackOne />
+                    {/* feedback one end */}
+
                     <FreezoneContactSection selectedPackage={selectedPackage}/>
                 </div>
             </div>

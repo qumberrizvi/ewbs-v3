@@ -2,6 +2,10 @@ import {StaticImageData} from "next/image";
 import plane_icon from "@/assets/images/icon/icon_82.svg";
 import document_icon from "@/assets/images/icon/icon_81.svg";
 import tick_icon from "@/assets/images/icon/icon_83.svg";
+import DubaiMainlandBanner from '@/assets/images/media/dubai-mainland-banner.png';
+import DubaiMainland1 from '@/assets/images/gallery/dubai-mainland-1.png';
+import DubaiMainland2 from '@/assets/images/gallery/dubai-mainland-2.png';
+import DubaiMainland3 from '@/assets/images/gallery/dubai-mainland-3.png';
 
 type IMainlandOverview = {
     title: string;
@@ -30,6 +34,8 @@ type IMainlandPackageSection = {
 export type IMainland = {
     title: string;
     slug: string;
+    banner?: StaticImageData;
+    gallery?: StaticImageData[];
     zoneName: string;
     overview: IMainlandOverview;
     process: IMainlandProcess;
@@ -41,6 +47,8 @@ export const mainlandData: IMainland[] = [
         title: "COMPANY SETUP IN DUBAI MAINLAND",
         slug: "dubai",
         zoneName: "Dubai Mainland",
+        banner: DubaiMainlandBanner,
+        gallery: [DubaiMainland1, DubaiMainland2, DubaiMainland3],
         overview: {
             title: "MAINLAND - DUBAI - Why Dubai?",
             descriptions: [

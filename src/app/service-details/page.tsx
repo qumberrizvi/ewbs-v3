@@ -8,7 +8,6 @@ import service_bg from "@/assets/images/media/img_32.jpg";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import shape from "@/assets/images/shape/shape_27.svg";
 import ServiceDetailsArea from "@/components/services/service-details-area";
-import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 
 export const metadata: Metadata = {
   title: "Service Details Page",
@@ -41,10 +40,6 @@ const ServiceDetailsPage = () => {
           {/* fancy banner three start */}
           <FancyBannerThree />
           {/* fancy banner three end */}
-
-          {/* news letter start */}
-          <NewsletterBanner />
-          {/* news letter end */}
         </main>
 
         {/* footer start */}

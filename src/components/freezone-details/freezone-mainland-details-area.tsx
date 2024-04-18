@@ -8,7 +8,8 @@ import gallery_1 from '@/assets/images/gallery/rakez.jpg';
 import gallery_2 from '@/assets/images/gallery/burj-from-creek.jpg';
 import gallery_3 from '@/assets/images/gallery/img_19.jpg';
 import FreezoneDetailsSteps from './freezone-details-steps';
-import FreezoneMainlandPackagesContactWrapper from "@/components/freezone-details/freezone-mainland-packages-contact-wrapper";
+import FreezoneMainlandPackagesContactWrapper
+    from "@/components/freezone-details/freezone-mainland-packages-contact-wrapper";
 import {IFreezone} from "@/data/freezone-data";
 import {IMainland} from "@/data/mainland-data";
 
@@ -69,11 +70,14 @@ const FreezoneMainlandDetailsArea = ({data, type = 'freezone'}: IProp) => {
                 <div className="img-gallery mb-60 lg-mb-40">
                     <div className="row">
                         <div className="col-sm-8">
-                            <Image src={gallery_1} alt="gallery_img" className="lazy-img" style={imgStyle}/>
+                            <Image src={data.gallery?.[0] || gallery_1} alt="gallery_img" className="lazy-img"
+                                   style={imgStyle}/>
                         </div>
                         <div className="col-sm-4">
-                            <Image src={gallery_2} alt="gallery_img" className="lazy-img" style={imgStyle}/>
-                            <Image src={gallery_3} alt="gallery_img" className="lazy-img" style={imgStyle}/>
+                            <Image src={data.gallery?.[1] || gallery_2} alt="gallery_img" className="lazy-img"
+                                   style={imgStyle}/>
+                            <Image src={data.gallery?.[2] || gallery_3} alt="gallery_img" className="lazy-img"
+                                   style={imgStyle}/>
                         </div>
                     </div>
                 </div>
@@ -95,7 +99,7 @@ const FreezoneMainlandDetailsArea = ({data, type = 'freezone'}: IProp) => {
                             <ul key={`freezone-process-ul-${index}`}
                                 className="style-none list-item pb-20 col-md-4 col-sm-12 col-lg-4">
                                 {chunk.map((item, itemIndex) => (
-                                    <li key={`freezone-process-li-${index}`}>{item}</li>
+                                    <li key={`freezone-process-li-${index}-${itemIndex}`}>{item}</li>
                                 ))}
                             </ul>
                         );

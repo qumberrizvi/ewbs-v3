@@ -13,7 +13,6 @@ import TextFeatureThree from "@/components/text-feature/text-feature-three";
 import FeedbackOne from "@/components/feedback/feedback-one";
 import PartnersSliderOne from "@/components/partners/partners-slider-one";
 import TeamSectionThree from "@/components/team/team-section-three";
-import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 
 export const metadata: Metadata = {
   title: "About Us - EWBS",
@@ -70,9 +69,6 @@ const AboutUsPage = () => {
           <FancyBannerThree />
           {/* fancy banner three end */}
 
-          {/* newsletter start */}
-          <NewsletterBanner />
-          {/* newsletter end */}
         </main>
 
         {/* footer start */}

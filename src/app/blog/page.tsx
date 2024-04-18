@@ -8,7 +8,6 @@ import blog_bg from "@/assets/images/media/services-banner.png";
 import shape from "@/assets/images/shape/shape_34.svg";
 import BlogListArea from "@/components/blogs/blog-list-area";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
-import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 
 export const metadata: Metadata = {
   title: "Blog - EWBS",
@@ -40,10 +39,6 @@ const BlogPage = () => {
           {/* fancy banner three start */}
           <FancyBannerThree />
           {/* fancy banner three end */}
-
-          {/* news letter start */}
-          <NewsletterBanner />
-          {/* news letter end */}
         </main>
 
         {/* footer start */}

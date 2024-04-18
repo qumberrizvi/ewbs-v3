@@ -11,7 +11,6 @@ import FeedbackFour from "@/components/feedback/feedback-four";
 import FeedbackOne from "@/components/feedback/feedback-one";
 import FeedbackFive from "@/components/feedback/feedback-five";
 import FeedbackThree from "@/components/feedback/feedback-three";
-import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 
 export const metadata: Metadata = {
   title: "Testimonial Page",
@@ -56,10 +55,6 @@ const TestimonialPage = () => {
           {/* fancy banner three start */}
           <FancyBannerThree />
           {/* fancy banner three end */}
-
-          {/* news letter start */}
-          <NewsletterBanner />
-          {/* news letter end */}
         </main>
 
         {/* footer start */}

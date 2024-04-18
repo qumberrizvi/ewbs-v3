@@ -2,6 +2,10 @@ import plane_icon from "@/assets/images/icon/icon_82.svg";
 import document_icon from "@/assets/images/icon/icon_81.svg";
 import tick_icon from "@/assets/images/icon/icon_83.svg";
 import {StaticImageData} from "next/image";
+import IfzaBanner from '@/assets/images/media/ifza-freezone-banner.png';
+import IfzaGallery1 from '@/assets/images/gallery/ifza-gallery-1.png';
+import IfzaGallery2 from '@/assets/images/gallery/ifza-gallery-2.png';
+import IfzaGallery3 from '@/assets/images/gallery/ifza-gallery-3.png';
 
 type IFreezoneOverview = {
     title: string;
@@ -30,6 +34,8 @@ type IFreezonePackageSection = {
 export type IFreezone = {
     title: string;
     slug: string;
+    banner?: StaticImageData;
+    gallery?: StaticImageData[];
     zoneName: string;
     overview: IFreezoneOverview;
     process: IFreezoneProcess;
@@ -419,7 +425,9 @@ export const freezoneData: IFreezone[] = [
     {
         title: "Establish your company in IFZA freezone",
         slug: "ifza",
+        banner: IfzaBanner,
         zoneName: "International Free Zone Authority",
+        gallery: [IfzaGallery1, IfzaGallery2, IfzaGallery3],
         overview: {
             title: "Establish your company in IFZA freezone",
             descriptions: [
