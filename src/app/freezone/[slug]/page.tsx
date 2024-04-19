@@ -36,13 +36,15 @@ const Freezone = ({params}: { params: { slug: string } }) => {
                         style={{backgroundImage: `url(${freezone?.banner?.src || breadcrumb_bg.src})`}}
                     >
                         <div className="container position-relative">
-                            <div className="row align-items-start">
+                            <div className="row align-items-center">
+                                <div className="col-lg-2"></div>
                                 <div className="col-lg-8 text-center">
                                     <div className="tag">Freezone</div>
                                     <h1 className="hero-heading no-bg text-white">
                                         {(freezone) ? freezone.title : 'Not Found'}
                                     </h1>
                                 </div>
+                                <div className="col-lg-2"></div>
                             </div>
                         </div>
                     </div>

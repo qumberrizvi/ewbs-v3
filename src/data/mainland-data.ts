@@ -44,7 +44,7 @@ export type IMainland = {
 
 export const mainlandData: IMainland[] = [
     {
-        title: "COMPANY SETUP IN DUBAI MAINLAND",
+        title: "Company Setup In Dubai Mainland",
         slug: "dubai",
         zoneName: "Dubai Mainland",
         banner: DubaiMainlandBanner,

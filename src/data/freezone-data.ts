@@ -3,9 +3,13 @@ import document_icon from "@/assets/images/icon/icon_81.svg";
 import tick_icon from "@/assets/images/icon/icon_83.svg";
 import {StaticImageData} from "next/image";
 import IfzaBanner from '@/assets/images/media/ifza-freezone-banner.png';
+import RakezBanner from '@/assets/images/media/rakez-freezone-banner.png';
 import IfzaGallery1 from '@/assets/images/gallery/ifza-gallery-1.png';
 import IfzaGallery2 from '@/assets/images/gallery/ifza-gallery-2.png';
 import IfzaGallery3 from '@/assets/images/gallery/ifza-gallery-3.png';
+import RakezGallery1 from '@/assets/images/gallery/rakez-gallery-1.png';
+import RakezGallery2 from '@/assets/images/gallery/rakez-gallery-2.png';
+import RakezGallery3 from '@/assets/images/gallery/rakez-gallery-3.png';
 
 type IFreezoneOverview = {
     title: string;
@@ -43,7 +47,7 @@ export type IFreezone = {
 }
 export const freezoneData: IFreezone[] = [
     {
-        title: "Setup Your Business in Dubai Freezone",
+        title: "Setup Your Business In Dubai Freezone",
         slug: "dubai",
         zoneName: "Dubai Freezone",
         overview: {
@@ -86,7 +90,7 @@ export const freezoneData: IFreezone[] = [
         }
     },
     {
-        title: "Setup Your Business in Shams Freezone",
+        title: "Setup Your Business In Shams Freezone",
         slug: "shams",
         zoneName: "Sharjah Media City",
         overview: {
@@ -214,7 +218,7 @@ export const freezoneData: IFreezone[] = [
         },
     },
     {
-        title: "Establish your company in Ajman Media City",
+        title: "Establish Your Company In Ajman Media City",
         slug: "amc",
         zoneName: "Ajman Media City",
         overview: {
@@ -335,9 +339,11 @@ export const freezoneData: IFreezone[] = [
         },
     },
     {
-        title: "Setup Your Business in RAKEZ Freezone",
+        title: "Setup Your Business In RAKEZ Freezone",
         slug: "rakez",
+        banner: RakezBanner,
         zoneName: "Ras Al Khaimah Economic Zone",
+        gallery: [RakezGallery1, RakezGallery2, RakezGallery3],
         overview: {
             title: "Establish Your Company in RAKEZ Freezone.",
             descriptions: [
@@ -423,7 +429,7 @@ export const freezoneData: IFreezone[] = [
         },
     },
     {
-        title: "Establish your company in IFZA freezone",
+        title: "Establish Your Company In IFZA Freezone",
         slug: "ifza",
         banner: IfzaBanner,
         zoneName: "International Free Zone Authority",

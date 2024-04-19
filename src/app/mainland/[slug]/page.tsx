@@ -26,13 +26,15 @@ const Mainland = ({params}: Props) => {
                         style={{backgroundImage: `url(${mainland?.banner?.src || breadcrumb_bg.src})`}}
                     >
                         <div className="container position-relative">
-                            <div className="row align-items-start">
+                            <div className="row align-items-center">
+                                <div className="col-lg-2"></div>
                                 <div className="col-lg-8 text-center">
                                     <div className="tag">Mainland</div>
                                     <h1 className="hero-heading no-bg text-white">
                                         {(mainland) ? mainland.title : 'Not Found'}
                                     </h1>
                                 </div>
+                                <div className="col-lg-2"></div>
                             </div>
                         </div>
                     </div>
