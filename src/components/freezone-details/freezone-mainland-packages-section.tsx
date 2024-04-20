@@ -3,34 +3,38 @@
 import React from "react";
 import Link from "next/link";
 import {IFreezonePackage} from "@/data/freezone-data";
+import {IMainlandPackage} from "@/data/mainland-data";
 
 
 // pricing card item
 type IProps = {
-    title: string;
-    price: number;
-    lists: string[];
+    _package: IFreezonePackage | IMainlandPackage;
     packageSetter: React.Dispatch<React.SetStateAction<number | null>>
 };
 
-function PricingCardItem({title, price, lists, packageSetter}: IProps) {
+function PricingCardItem({_package, packageSetter}: IProps) {
     return (
         <div className="pricing-card-one light-bg d-flex flex-column w-100 h-100 text-center">
-            <h2 className="fw-bold">{title}</h2>
-            <div className="price-banner text-lg-start d-lg-flex justify-content-center align-items-center">
+            <h2 className="fw-bold">{_package.title}</h2>
+            <div className="price-banner text-lg-start d-lg-flex justify-content-center align-items-center position-relative">
                 <div className="price">
-                    <sup>AED</sup> {price.toLocaleString()}
+                    <sup>AED</sup> {_package.price.toLocaleString()}
                 </div>
+                {
+                    (_package.installmentPossible) && (
+                        <span className="position-absolute light-bg rounded p-2 text-danger end-0 installment-badge">in installments</span>
+                    )
+                }
             </div>
 
             <ul className="style-none mb-35">
-                {lists.map((l, i) => (
+                {_package.list.map((l, i) => (
                     <li key={i}>{l}</li>
                 ))}
             </ul>
             <div className="action-btn text-center">
                 Begin your journey today.{" "}
-                <Link href="#contact-section" onClick={() => packageSetter(price)}>
+                <Link href="#contact-section" onClick={() => packageSetter(_package.price)}>
                     Choose Package <i className="bi bi-chevron-right"></i>
                 </Link>
             </div>
@@ -52,9 +56,7 @@ function FreezoneMainlandPackagesSection({packageSetter, packages}: IPackagesPro
                     <div className="col-md-4 mb-65 md-mb-30"
                          key={`freezone-package-${index}`}>
                         <PricingCardItem
-                            title={_package.title}
-                            price={_package.price}
-                            lists={_package.list}
+                            _package={_package}
                             packageSetter={packageSetter}
                         />
                     </div>

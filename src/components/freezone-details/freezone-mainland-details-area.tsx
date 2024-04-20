@@ -12,10 +12,7 @@ import FreezoneMainlandPackagesContactWrapper
     from "@/components/freezone-details/freezone-mainland-packages-contact-wrapper";
 import {IFreezone} from "@/data/freezone-data";
 import {IMainland} from "@/data/mainland-data";
-
-function capitalizeFirstLetter(string: string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
+import {capitalizeFirstLetter} from "@/utils/utils";
 
 // list item
 function ListItem({icon, text, sm_text}: { icon: StaticImageData; text: string; sm_text: string }) {

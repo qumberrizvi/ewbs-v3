@@ -11,3 +11,7 @@ export const animationCreate = () => {
 export const calculateDiscountedPrice = (price:number, discount:number) => {
   return (price - (price * discount) / 100).toFixed(2);
 };
+
+export const capitalizeFirstLetter = (string: string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};
