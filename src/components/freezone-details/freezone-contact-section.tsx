@@ -48,7 +48,7 @@ function FreezoneContactSection({selectedPackage}: IProps) {
                             </div>
                         </div>
                         <div
-                            className="col-xxl-6 col-lg-5 order-lg-first wow fadeInLeft bg-wrapper light-bg">
+                            className="col-xxl-6 col-lg-5 order-lg-first wow fadeInLeft bg-wrapper light-bg position-relative">
                             <span className="position-absolute visually-hidden" id="contact-section"></span>
                             <div className="form-style-one">
                                 {/* form start */}
