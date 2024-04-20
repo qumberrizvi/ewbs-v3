@@ -95,18 +95,58 @@ export const mainlandData: IMainland[] = [
             packages: [
                 {
                     title: "Professional Licence",
-                    price: 11999,
+                    price: 13999,
                     list: [
-                        "Dubai Trade Licence for the Mainland",
-                        "Visa Distribution",
-                        "Local Service Agent / Corporate Sponsorship",
-                        "Shaikh Zayed Road Premium Office Address",
-                        "Payment Voucher for Reservations",
-                        "Payment Receipt",
-                        "Service of documentation",
-                        "Account Manager"
+                        "Professional & Services License (LLC)",
+                        "Company Name Approval",
+                        "Company Name Reservation",
+                        "Arabic Trade Name",
+                        "Initial Approval",
+                        "Dubai Invest Verification",
+                        "Memorandum of Association",
+                        "Dubai Chamber Of commerce",
+                        "Ministry of Economy",
+                        "Dubai Municipality",
+                        "Administration Fees",
+                        "Dubai Mainland Trade License"
                     ]
-                }
+                },
+                {
+                    title: "Commercial Licence",
+                    price: 14500,
+                    list: [
+                        "Trading Commercial License (LLC)",
+                        "Company Name Approval",
+                        "Company Name Reservation",
+                        "Arabic Trade Name",
+                        "Initial Approval",
+                        "Dubai Invest Verification",
+                        "Memorandum of Association",
+                        "Dubai Chamber Of commerce",
+                        "Ministry of Economy",
+                        "Dubai Municipality",
+                        "Administration Fees",
+                        "Dubai Mainland Trade License"
+                    ],
+                },
+                {
+                    title: "General Trading Licence",
+                    price: 32500,
+                    list: [
+                        "General Trading License (LLC)",
+                        "Company Name Approval",
+                        "Company Name Reservation",
+                        "Arabic Trade Name",
+                        "Initial Approval",
+                        "Dubai Invest Verification",
+                        "Memorandum of Association",
+                        "Dubai Chamber Of commerce",
+                        "Ministry of Economy",
+                        "Dubai Municipality",
+                        "Administration Fees",
+                        "Dubai Mainland Trade License",
+                    ],
+                },
             ]
         }
     },
