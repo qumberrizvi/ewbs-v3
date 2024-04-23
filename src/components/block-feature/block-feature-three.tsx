@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const BlockFeatureThree = () => {
+    // noinspection HtmlUnknownTarget
     return (
         <div className="block-feature-three position-relative mt-150 lg-mt-80 pb-150 lg-pb-80 sm-pb-60">
             <div className="container">
@@ -25,7 +26,7 @@ const BlockFeatureThree = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-7">
-                                        <h3 className="block-title d-inline-block position-relative">
+                                        <h3 className="block-title-white d-inline-block position-relative">
                                             <Link href="/about-us">
                                                 Helped 1000+ businesses establish successfully in the Emirates.
                                             </Link>
@@ -78,7 +79,7 @@ const BlockFeatureThree = () => {
                                 className="block-four border-30 ps-lg-4 ps-3 pe-lg-4 pe-3 pt-15 pb-30 mt-45 lg-mt-30 wow fadeInUp"
                                 data-wow-delay="0.2s"
                             >
-                                <h3 className="block-title d-inline-block position-relative mt-250 mb-20 lg-mb-150 sm-mb-100">
+                                <h3 className="block-title-white d-inline-block position-relative mt-250 mb-20 lg-mb-150 sm-mb-100">
                                     <Link href="/about-us">
                                         Sustained lasting partnerships with top
                                         <br className="d-none d-xl-block"/>

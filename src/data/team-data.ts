@@ -2,11 +2,12 @@ import { ITeam } from "@/types/team-d-t";
 import jasim from "@/assets/images/media/jassim.jpeg";
 import ashar from "@/assets/images/media/ashar.jpeg";
 import renu from "@/assets/images/media/renu.jpeg";
-import arsalan from "@/assets/images/media/arsalan.jpeg";
+import arsalan from "@/assets/images/media/arsalan.jpg";
 import djamel from "@/assets/images/media/djamel.jpeg";
 import iqra from "@/assets/images/media/iqra.jpeg";
 import diana from "@/assets/images/media/diana.jpeg";
-import nihal from "@/assets/images/media/nihal.jpeg";
+import nihal from "@/assets/images/media/nehal.jpg";
+import jasdeep from "@/assets/images/media/jasdeep.jpg";
 
 const team_data: ITeam[] = [
   {
@@ -79,6 +80,15 @@ const team_data: ITeam[] = [
     designation: "Business Consultant",
     phone: "+971547918890",
     email: "iqra@ewbsbusiness.ae",
+    page: "any",
+  },
+  {
+    id: 9,
+    img: jasdeep,
+    name: "Jasdeep Kaur",
+    designation: "Business Consultant",
+    phone: "+971505928807",
+    email: "jasdeep@ewbsbusiness.ae",
     page: "any",
   },
 ];

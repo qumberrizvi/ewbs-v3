@@ -27,7 +27,7 @@ const Freezone = ({params}: { params: { slug: string } }) => {
         <Wrapper>
             <div className="main-page-wrapper">
                 {/* header start */}
-                <HeaderTwo/>
+                <HeaderTwo noNavLinks={true}/>
                 {/* header end */}
                 <main>
                     {/* breadcrumb start */}

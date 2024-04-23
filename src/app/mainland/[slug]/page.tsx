@@ -17,7 +17,7 @@ const Mainland = ({params}: Props) => {
         <Wrapper>
             <div className="main-page-wrapper">
                 {/* header start */}
-                <HeaderTwo/>
+                <HeaderTwo noNavLinks={true}/>
                 {/* header end */}
                 <main>
                     {/* breadcrumb start */}

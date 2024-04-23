@@ -6,6 +6,7 @@ import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import ContactArea from "@/components/contact/contact-area";
 import FooterThree from "@/layout/footer/footer-three";
 import shape from "@/assets/images/shape/shape_33.svg";
+import contactBanner from "@/assets/images/media/contant-banner.png";
 
 export const metadata: Metadata = {
   title: "Contact - EWBS",
@@ -25,6 +26,7 @@ const ContactPage = () => {
             subtitle="Get our all info and message us directly from here."
             page="Contact"
             shape={shape}
+            bg_img={contactBanner}
           />
           {/* breadcrumb end */}
 

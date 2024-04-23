@@ -4,12 +4,24 @@ import tick_icon from "@/assets/images/icon/icon_83.svg";
 import {StaticImageData} from "next/image";
 import IfzaBanner from '@/assets/images/media/ifza-freezone-banner.png';
 import RakezBanner from '@/assets/images/media/rakez-freezone-banner.png';
+import ShamsBanner from '@/assets/images/media/shams-freezone-banner.png';
+import AmcBanner from '@/assets/images/media/amc-freezone-banner.png';
+import DubaiBanner from '@/assets/images/media/dubai-freezone-banner.png';
 import IfzaGallery1 from '@/assets/images/gallery/ifza-gallery-1.png';
 import IfzaGallery2 from '@/assets/images/gallery/ifza-gallery-2.png';
 import IfzaGallery3 from '@/assets/images/gallery/ifza-gallery-3.png';
 import RakezGallery1 from '@/assets/images/gallery/rakez-gallery-1.png';
 import RakezGallery2 from '@/assets/images/gallery/rakez-gallery-2.png';
 import RakezGallery3 from '@/assets/images/gallery/rakez-gallery-3.png';
+import ShamsGallery1 from '@/assets/images/gallery/shams-gallery-1.png';
+import ShamsGallery2 from '@/assets/images/gallery/shams-gallery-2.png';
+import ShamsGallery3 from '@/assets/images/gallery/shams-gallery-3.png';
+import AmcGallery1 from '@/assets/images/gallery/amc-gallery-1.png';
+import AmcGallery2 from '@/assets/images/gallery/amc-gallery-2.png';
+import AmcGallery3 from '@/assets/images/gallery/amc-gallery-3.png';
+import DubaiGallery1 from '@/assets/images/gallery/dubai-freezone-gallery-1.png';
+import DubaiGallery2 from '@/assets/images/gallery/dubai-freezone-gallery-2.png';
+import DubaiGallery3 from '@/assets/images/gallery/dubai-freezone-gallery-3.png';
 
 type IFreezoneOverview = {
     title: string;
@@ -51,6 +63,8 @@ export const freezoneData: IFreezone[] = [
         title: "Setup Your Business In Dubai Freezone",
         slug: "dubai",
         zoneName: "Dubai Freezone",
+        banner: DubaiBanner,
+        gallery: [DubaiGallery1, DubaiGallery2, DubaiGallery3],
         overview: {
             title: "Establish Your Company in Dubai Freezone",
             descriptions: [
@@ -94,6 +108,8 @@ export const freezoneData: IFreezone[] = [
         title: "Setup Your Business In Shams Freezone",
         slug: "shams",
         zoneName: "Sharjah Media City",
+        banner: ShamsBanner,
+        gallery: [ShamsGallery1, ShamsGallery2, ShamsGallery3],
         overview: {
             title: "Establish Your Company in SHARJAH MEDIA CITY",
             descriptions: [
@@ -222,6 +238,8 @@ export const freezoneData: IFreezone[] = [
         title: "Establish Your Company In Ajman Media City",
         slug: "amc",
         zoneName: "Ajman Media City",
+        banner: AmcBanner,
+        gallery: [AmcGallery1, AmcGallery2, AmcGallery3],
         overview: {
             title: "Establish your company in Ajman Media City",
             descriptions: [
