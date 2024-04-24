@@ -1,13 +1,13 @@
 import { ITeam } from "@/types/team-d-t";
 import jasim from "@/assets/images/media/jassim.jpeg";
-import ashar from "@/assets/images/media/ashar.jpeg";
-import renu from "@/assets/images/media/renu.jpeg";
-import arsalan from "@/assets/images/media/arsalan.jpg";
-import djamel from "@/assets/images/media/djamel.jpeg";
+import ashar from "@/assets/images/media/ashar.png";
+import renu from "@/assets/images/media/renu.png";
+import arsalan from "@/assets/images/media/arsalan.png";
+import djamel from "@/assets/images/media/djamel.png";
 import iqra from "@/assets/images/media/iqra.jpeg";
 import diana from "@/assets/images/media/diana.jpeg";
-import nihal from "@/assets/images/media/nehal.jpg";
-import jasdeep from "@/assets/images/media/jasdeep.jpg";
+import nihal from "@/assets/images/media/nehal.png";
+import jasdeep from "@/assets/images/media/jasdeep.png";
 
 const team_data: ITeam[] = [
   {
