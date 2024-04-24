@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import Link from "next/link";
 // internal
 import bg_1 from "@/assets/images/media/home-banner-red.png";
-import m_bg_1 from "@/assets/images/media/home-banner-red.png";
+import m_bg_1 from "@/assets/images/media/home-banner-red-phone.png";
 import useWindowOrientation from "@/hooks/use-window-orientation";
 
 // slider bg
