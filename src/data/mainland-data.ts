@@ -26,7 +26,7 @@ export type IMainlandPackage = {
     title: string;
     price: number;
     list: string[];
-    installmentPossible?: boolean;
+    installmentCount?: number;
 }
 type IMainlandPackageSection = {
     description: string;

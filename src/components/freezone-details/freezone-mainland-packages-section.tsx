@@ -13,6 +13,7 @@ type IProps = {
 };
 
 function PricingCardItem({_package, packageSetter}: IProps) {
+    // noinspection HtmlUnknownAnchorTarget
     return (
         <div className="pricing-card-one light-bg d-flex flex-column w-100 h-100 text-center">
             <h2 className="fw-bold">{_package.title}</h2>
@@ -20,12 +21,13 @@ function PricingCardItem({_package, packageSetter}: IProps) {
                 <div className="price">
                     <sup>AED</sup> {_package.price.toLocaleString()}
                 </div>
-                {
-                    (_package.installmentPossible) && (
-                        <span className="position-absolute light-bg rounded p-2 text-danger end-0 installment-badge">in installments</span>
-                    )
-                }
             </div>
+
+            {
+                (_package.installmentCount) && (
+                    <span className="bg-danger text-white rounded p-2 text-danger fw-bold mb-4 end-0 installment-badge">{_package.installmentCount} installments</span>
+                )
+            }
 
             <ul className="style-none mb-35">
                 {_package.list.map((l, i) => (

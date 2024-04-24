@@ -42,7 +42,7 @@ export type IFreezonePackage = {
     title: string;
     price: number;
     list: string[];
-    installmentPossible?: boolean;
+    installmentCount?: number;
 }
 type IFreezonePackageSection = {
     description: string;
@@ -408,7 +408,7 @@ export const freezoneData: IFreezone[] = [
                 {
                     title: "1 Visa",
                     price: 12000,
-                    installmentPossible: true,
+                    installmentCount: 3,
                     list: [
                         "Business License for 1 year",
                         "1 Investor visa Included",
@@ -423,7 +423,7 @@ export const freezoneData: IFreezone[] = [
                 {
                     title: "2 Visa",
                     price: 20000,
-                    installmentPossible: true,
+                    installmentCount: 4,
                     list: [
                         "Business License for 1 year",
                         "2 Investor visa for 2 years",
@@ -438,7 +438,7 @@ export const freezoneData: IFreezone[] = [
                 {
                     title: "10 Years",
                     price: 95000,
-                    installmentPossible: true,
+                    installmentCount: 6,
                     list: [
                         "1 Investor visa for 10 years",
                         "Business License for 10 Years",
