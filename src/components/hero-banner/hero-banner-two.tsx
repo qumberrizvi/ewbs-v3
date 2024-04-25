@@ -51,7 +51,9 @@ const HeroBannerTwo = () => {
                             className="text-xl pt-35 pb-25 wow fadeInUp text-white"
                             data-wow-delay="0.1s"
                         >
-                            From idea to reality: UAE business setup simplified with EWBS expertise! #ewbsbusiness
+                            {
+                                (orientation === 'landscape') && "From idea to reality: UAE business setup simplified with EWBS expertise! #ewbsbusiness"
+                            }
                         </p>
                         <Link href="/contact"
                               className="btn-four-inverted icon-link wow fadeInUp"
