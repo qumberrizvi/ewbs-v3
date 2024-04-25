@@ -12,12 +12,13 @@ const imgStyle = {
   height:'auto'
 }
 
-const TeamSectionThree = ({ style_2 = false }: { style_2?: boolean }) => {
+const TeamSectionThree = ({ style_2 = false, blank_background = false }: { style_2?: boolean, blank_background?: boolean }) => {
   const teams = team_data.filter((t) => ["home"].includes(t.page));
+  // noinspection HtmlUnknownTarget
   return (
     <>
       {!style_2 && (
-        <div className="team-section-three light-bg position-relative pt-120 lg-pt-60 pb-130 lg-pb-60 mt-90 lg-mt-40">
+        <div className={`team-section-three position-relative pt-120 lg-pt-60 pb-130 lg-pb-60 ${(!blank_background) && 'light-bg background-streak mt-90 lg-mt-40'}`}>
           <div className="container">
             <div className="position-relative">
               <div className="title-one mb-40 lg-mb-10 wow fadeInUp">
@@ -70,7 +71,7 @@ const TeamSectionThree = ({ style_2 = false }: { style_2?: boolean }) => {
               </div>
 
               <div className="section-btn sm-mt-40">
-                <Link href="/team-v2" className="btn-eighteen tran3s">
+                <Link href="/team" className="btn-eighteen tran3s">
                   See All
                 </Link>
               </div>

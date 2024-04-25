@@ -538,6 +538,63 @@
             }
         }
     }
+    .media-single-person-item {
+        height: 750px;
+        width: auto;
+        background-size: cover;
+        border-radius: 30px;
+        position: relative;
+        z-index: 1;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            border-radius: 0 0 30px 30px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.1%, #000000 100%);
+            mix-blend-mode: overlay;
+        }
+        li {
+            display: inline-block;
+            font-weight: 500;
+            color: $text-dark;
+            padding: 6px 50px 6px 50px;
+            border-radius: 45px;
+            background: #fff;
+            margin: 7px 0;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                background: $color-one;
+                left: 10px;
+                top:7px;
+                @include transition(0.2s);
+            }
+            &:after {
+                content: '\F633';
+                position: absolute;
+                font-family: $bootstrapFont;
+                top:6px;
+                left: 14px;
+                color: $color-two;
+                @include transition(0.2s);
+            }
+            &:hover:before {
+                background: $color-two;
+            }
+            &:hover:after {
+                color:#fff;
+            }
+        }
+    }
 }
 // Text Feature Two
 .text-feature-two {
@@ -821,9 +878,13 @@
         top:0;
         bottom: 0;
         width: 45%;
-        background: url(../images/shape/shape_09.svg) no-repeat right bottom;
         background-size: cover;
         z-index: -1;
+    }
+    &.background-streak {
+        &:before {
+            background: url(../images/shape/shape_09.svg) no-repeat right bottom;
+        }
     }
     .section-btn {
         position: absolute;

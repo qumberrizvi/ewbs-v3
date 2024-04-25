@@ -9,6 +9,7 @@ import FreezoneContactSection from "@/components/freezone-details/freezone-conta
 import {IFreezone} from "@/data/freezone-data";
 import {IMainland} from "@/data/mainland-data";
 import FeedbackOne from "@/components/feedback/feedback-one";
+import TeamSectionThree from "@/components/team/team-section-three";
 
 type IProp = {
     data: IFreezone | IMainland;
@@ -17,6 +18,7 @@ type IProp = {
 function FreezoneMainlandPackagesContactWrapper({data}: IProp) {
     const [selectedPackage, setSelectedPackage] = useState<number | null>(null);
 
+    // noinspection HtmlUnknownAnchorTarget
     return (
         <>
             <div className="pricing-section pt-0 pt-lg-4 lg-pb-80">
@@ -64,6 +66,10 @@ function FreezoneMainlandPackagesContactWrapper({data}: IProp) {
                     {/* feedback one start */}
                     <FeedbackOne />
                     {/* feedback one end */}
+
+                    {/* team three start */}
+                    <TeamSectionThree blank_background={true}/>
+                    {/* team three end */}
 
                     <FreezoneContactSection selectedPackage={selectedPackage}/>
                 </div>

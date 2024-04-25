@@ -5,7 +5,6 @@ import HeaderOne from "@/layout/header/header-one";
 import FooterTwo from "@/layout/footer/footer-two";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import BreadcrumbTwo from "@/components/breadcrumb/breadcrumb-two";
-import TeamTwoArea from "@/components/team/team-v2-area";
 import TeamDetailsArea from "@/components/team/team-details-area";
 
 export const metadata: Metadata = {

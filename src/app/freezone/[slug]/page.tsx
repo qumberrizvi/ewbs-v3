@@ -7,6 +7,7 @@ import FreezoneMainlandDetailsArea from "@/components/freezone-details/freezone-
 import FooterThree from "@/layout/footer/footer-three";
 import {freezoneData} from "@/data/freezone-data";
 import {Metadata} from "next";
+import Map from "@/components/map/map";
 
 type Props = {
     params: { slug: string }
@@ -64,6 +65,7 @@ const Freezone = ({params}: { params: { slug: string } }) => {
                     }
                     {/* project details area end */}
 
+                    <Map/>
                     {/* fancy banner three start */}
                     <FancyBannerThree/>
                     {/* fancy banner three end */}

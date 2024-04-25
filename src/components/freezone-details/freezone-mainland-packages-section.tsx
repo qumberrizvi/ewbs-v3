@@ -25,7 +25,7 @@ function PricingCardItem({_package, packageSetter}: IProps) {
 
             {
                 (_package.installmentCount) && (
-                    <span className="bg-danger text-white rounded p-2 text-danger fw-bold mb-4 end-0 installment-badge">{_package.installmentCount} installments</span>
+                    <span className="bg-danger text-white rounded p-2 text-danger fw-bold mb-4 end-0 installment-badge">In {_package.installmentCount} installments</span>
                 )
             }
 

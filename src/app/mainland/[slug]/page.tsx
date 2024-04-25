@@ -6,6 +6,7 @@ import breadcrumb_bg from "@/assets/images/media/services-banner.png";
 import FreezoneMainlandDetailsArea from "@/components/freezone-details/freezone-mainland-details-area";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import FooterThree from "@/layout/footer/footer-three";
+import Map from "@/components/map/map";
 
 type Props = {
     params: { slug: string }
@@ -55,6 +56,7 @@ const Mainland = ({params}: Props) => {
                     }
                     {/* project details area end */}
 
+                    <Map/>
                     {/* fancy banner three start */}
                     <FancyBannerThree/>
                     {/* fancy banner three end */}

@@ -148,7 +148,7 @@
         width: 34px;
     }
     &:hover, &.active {
-        box-shadow: 0px 35px 70px rgba(0, 0, 0, 0.04);
+        box-shadow: 0 35px 70px rgba(0, 0, 0, 0.04);
         .arrow-btn {
             opacity: 1;
         }
@@ -163,7 +163,7 @@
     background: #fff;
     position: relative;
     &:hover {
-        box-shadow: 0px 10px 20px rgba(8,32,26,.04);
+        box-shadow: 0 10px 20px rgba(8,32,26,.04);
     }
     .icon {
         height: 55px;
@@ -330,7 +330,7 @@
 // Card Fifteen
 .card-style-fifteen {
     background: #fff;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     overflow: hidden;
     text-align: center;
