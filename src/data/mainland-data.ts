@@ -131,7 +131,7 @@ export const mainlandData: IMainland[] = [
                     ],
                 },
                 {
-                    title: "General Trading Licence",
+                    title: "General Trading",
                     price: 32500,
                     list: [
                         "General Trading License (LLC)",
