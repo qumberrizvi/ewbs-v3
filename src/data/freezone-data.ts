@@ -564,4 +564,86 @@ export const freezoneData: IFreezone[] = [
             ],
         },
     },
+    {
+        title: "Setup Your Business In SPC Freezone",
+        slug: "spc",
+        zoneName: "SPC Freezone",
+        overview: {
+            title: "Start your business today in SPC Freezone",
+            descriptions: [
+                "There are over 1,500 different industries represented by our diverse group of businesses. We guarantee your company the best possible rates and the most competitive terms for all your business needs.",
+                "Freezone that specialises in everything from office spaces to warehouse-lofts, retail spaces to co-working spaces. If you're an entrepreneur, we've got you covered! Let us help you grow your business and make your dream come true!",
+                "Own a business in the Freezone and want to expand to the mainland? With our duallicensing opportunity, you can. Our team has helped entrepreneurs in the Freezone to grow their businesses without having to relocate.",
+            ],
+        },
+        process: {
+            title: "Advantages Of SPC Freezone Company Formation",
+            descriptions: [
+                "A few reasons why businesses choose to set up in SPC Freezone:"
+            ],
+            list: [
+                "100% foreign ownership",
+                "No tax on corporate profits or personal income",
+                "No customs duty on imports or exports",
+                "Access to advanced infrastructure and facilities",
+                "Business-friendly environment and regulations",
+                "Easy company set-up and registration process",
+            ],
+            steps: [
+                {
+                    title: "Application",
+                    description: "An application is submitted for the registration of company",
+                    icon: plane_icon,
+                },
+                {
+                    title: "Documentation",
+                    description: "Submission of documents and signing of application forms",
+                    icon: document_icon,
+                },
+                {
+                    title: "Registered",
+                    description: "Company registration and formation is complete",
+                    icon: tick_icon,
+                },
+            ],
+        },
+        packageSection: {
+            description: "At SPC FREE ZONE we offer a wide range of facilities and solutions for all your business needs.",
+            packages: [
+                {
+                    title: "0 Visa",
+                    price: 6500,
+                    list: [
+                        "Combine any activities ( Service, Commercial and Ecommerce)",
+                        "Up to 5 Shareholder",
+                        "Choose any 3 activities under one License",
+                        "Stamped License, MOA and Lease Agreement",
+                    ],
+                },
+                {
+                    title: "1 Visa",
+                    price: 8000,
+                    list: [
+                        "Combine any activities ( Service, Commercial and Ecommerce)",
+                        "Up to 5 Shareholder",
+                        "Choose any 3 activities under one License",
+                        "Stamped License, MOA and Lease Agreement",
+                    ]
+                },
+                {
+                    title: "3 Year Visa",
+                    price: 15000,
+                    list: [
+                        "1 year license with a 3 year visa",
+                        "Combine any activities ( Service, Commercial and Ecommerce)",
+                        "Up to 5 Shareholder",
+                        "Choose any 3 activities under one License",
+                        "Stamped License, MOA and Lease Agreement",
+                        "Trade license, Establishment card",
+                        "E Channel and One Investor Visa"
+                    ]
+                }
+            ]
+        }
+    }
 ];

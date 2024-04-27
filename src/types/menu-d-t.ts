@@ -15,4 +15,5 @@ export interface IMenu {
         title: string;
       }[]
   }[];
+  category?: 'freezone' | 'mainland' | 'other',
 }

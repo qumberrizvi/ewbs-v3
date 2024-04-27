@@ -4,6 +4,7 @@ import Link from 'next/link';
 // internal
 import logo from '@/assets/images/logo/logo_01.svg';
 import FooterSocial from './footer-social';
+import {freezoneMenu} from "@/data/menu-data";
 
 const FooterOne = () => {
     return (
@@ -45,11 +46,11 @@ const FooterOne = () => {
                         <div className="col-xl-2 col-md-3 col-sm-4 mb-20">
                             <h5 className="footer-title">Freezones</h5>
                             <ul className="footer-nav-link style-none">
-                                <li><Link href="/freezone/dubai">Dubai Freezone</Link></li>
-                                <li><Link href="/freezone/shams">Shams Freezone</Link></li>
-                                <li><Link href="/freezone/amc">AMC Freezone</Link></li>
-                                <li><Link href="/freezone/rakez">Rakez Freezone</Link></li>
-                                <li><Link href="/freezone/ifza">Ifza Freezone</Link></li>
+                                {
+                                    (freezoneMenu) && freezoneMenu.map((item, index) => (
+                                        <li key={`freezone-menu-${index}`}><Link href={item.link}>{item.title}</Link></li>
+                                    ))
+                                }
                             </ul>
                         </div>
                     </div>
@@ -60,7 +61,7 @@ const FooterOne = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-7 order-lg-first mb-15">
                             <Link href="/" className="d-none d-lg-inline-block mb-25">
-                                <Image src={logo} alt="logo"/>
+                            <Image src={logo} alt="logo"/>
                             </Link>
                             <div className="d-xl-flex align-items-center">
                                 <ul className="style-none bottom-nav d-flex flex-wrap justify-content-center justify-content-lg-start order-lg-last">

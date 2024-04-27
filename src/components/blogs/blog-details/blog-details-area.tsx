@@ -1,14 +1,6 @@
 import React from "react";
-import BlogDetailsCommentArea from "./blog-details-comment-area";
-import Image from "next/image";
-import Link from "next/link";
 // internal
 import BlogSidebar from "../blog-sidebar";
-import blog_1 from "@/assets/images/blog/blog_img_08.jpg";
-import blog_2 from "@/assets/images/blog/blog_img_16.jpg";
-import blog_3 from "@/assets/images/blog/blog_img_17.jpg";
-import icon from "@/assets/images/icon/icon_93.svg";
-import BlogDetailsForm from "@/components/forms/blog-details-form";
 import {IBlog} from "@/types/blog-d-t";
 
 const BlogDetailsArea = ({blog}: { blog: IBlog }) => {
@@ -17,7 +9,7 @@ const BlogDetailsArea = ({blog}: { blog: IBlog }) => {
         <div className="blog-details position-relative mt-150 lg-mt-80 mb-150 lg-mb-80">
             <div className="container">
                 <div className="row gx-xl-5">
-                    <div className="col-lg-8">
+                    <div className="col-lg-9">
                         <article className="blog-meta-two style-two">
                             <figure
                                 className="post-img position-relative d-flex align-items-end m0"
@@ -32,7 +24,7 @@ const BlogDetailsArea = ({blog}: { blog: IBlog }) => {
                                 </div>
                                 <div className="post-details-meta" dangerouslySetInnerHTML={{__html: body}}>
                                 </div>
-                                <div className="bottom-widget d-sm-flex align-items-center justify-content-between">
+                                {/*<div className="bottom-widget d-sm-flex align-items-center justify-content-between">
                                     <ul className="d-flex align-items-center tags style-none pt-20">
                                         <li>Tag:</li>
                                         <li>
@@ -63,7 +55,7 @@ const BlogDetailsArea = ({blog}: { blog: IBlog }) => {
                                             </Link>
                                         </li>
                                     </ul>
-                                </div>
+                                </div>*/}
                             </div>
                         </article>
                         {/* blog comment area start */}
@@ -88,7 +80,7 @@ const BlogDetailsArea = ({blog}: { blog: IBlog }) => {
                         </div>*/}
                     </div>
 
-                    <div className="col-lg-4 col-md-8">
+                    <div className="col-lg-3 col-md-8">
                         {/* blog sidebar start */}
                         <BlogSidebar/>
                         {/* blog sidebar end */}

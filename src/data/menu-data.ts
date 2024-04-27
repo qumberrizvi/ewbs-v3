@@ -29,12 +29,14 @@ const menu_data: IMenu[] = [
         title: 'Freezone',
         link: '#',
         dropdown: true,
+        category: 'freezone',
         dropdown_menus: [
             {link: '/freezone/dubai', title: 'Dubai Freezone'},
             {link: '/freezone/shams', title: 'Shams Freezone'},
             {link: '/freezone/amc', title: 'AMC Freezone'},
             {link: '/freezone/rakez', title: 'Rakez Freezone'},
             {link: '/freezone/ifza', title: 'Ifza Freezone'},
+            {link: '/freezone/spc', title: 'SPC Freezone'},
         ],
     },
     {
@@ -109,3 +111,5 @@ const menu_data: IMenu[] = [
 ]
 
 export default menu_data;
+
+export const freezoneMenu = menu_data.find((item) => item.category === 'freezone')?.dropdown_menus;

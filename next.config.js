@@ -28,6 +28,11 @@ const nextConfig = {
                 permanent: true,
             },
             {
+                source: '/spcfz',
+                destination: '/freezone/spc',
+                permanent: true,
+            },
+            {
                 source: '/pro-services',
                 destination: '/services',
                 permanent: true,
@@ -81,11 +86,6 @@ const nextConfig = {
             {
                 source: '/sharjah-freezone',
                 destination: '/freezone/shams',
-                permanent: false,
-            },
-            {
-                source: '/spcfz',
-                destination: '/',
                 permanent: false,
             },
             {

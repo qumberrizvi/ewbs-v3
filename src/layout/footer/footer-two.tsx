@@ -5,6 +5,7 @@ import Link from 'next/link';
 import logo from '@/assets/images/logo/logo_02.svg';
 import shape from '@/assets/images/shape/shape_06.svg';
 import FooterSocial from './footer-social';
+import {freezoneMenu} from "@/data/menu-data";
 
 const FooterTwo = () => {
   return (
@@ -48,11 +49,11 @@ const FooterTwo = () => {
             <div className="col-xxl-2 col-lg-3 col-sm-4 mb-20">
               <h5 className="footer-title">Freezones</h5>
               <ul className="footer-nav-link style-none">
-                <li><Link href="/freezone/dubai">Dubai Freezone</Link></li>
-                <li><Link href="/freezone/shams">Shams Freezone</Link></li>
-                <li><Link href="/freezone/amc">AMC Freezone</Link></li>
-                <li><Link href="/freezone/rakez">Rakez Freezone</Link></li>
-                <li><Link href="/freezone/ifza">Ifza Freezone</Link></li>
+                {
+                    (freezoneMenu) && freezoneMenu.map((item, index) => (
+                        <li key={`freezone-menu-${index}`}><Link href={item.link}>{item.title}</Link></li>
+                    ))
+                }
               </ul>
             </div>
           </div>
