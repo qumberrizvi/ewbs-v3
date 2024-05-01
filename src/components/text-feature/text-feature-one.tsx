@@ -98,10 +98,10 @@ const TextFeatureOne = ({style_2 = false}: { style_2?: boolean }) => {
                                     </Link>
                                 </div>
                                 <div className="col-lg-6 ms-auto wow fadeInRight">
-                                    <CardItem icon={icon_2} title="Our Mission"
-                                              desc="EWBS is dedicated to empowering entrepreneurs by providing tailored solutions that transform visions into thriving realities. With unwavering commitment and integrity, we aim to be the premier partner for seamless business expansion in Dubai's dynamic economic landscape."/>
-                                    <CardItem icon={icon_3} title="Our company vision."
-                                              desc="Our vision at EWBS is to be the leading catalyst for entrepreneurial success in the Emirates. Through our unwavering commitment to excellence and continuous evolution, we aim to shape the future of entrepreneurship in Dubai and beyond, driving economic growth and prosperity for all stakeholders."/>
+                                    <CardItem icon={icon_2} title="Company's Journey"
+                                              desc="At EWBS Excellence Business Services, we have been on a remarkable journey since our inception. With years of experience in providing seamless business expansion solutions in the Emirates, we have established ourselves as the premier partner for ambitious business owners and entrepreneurs. Our unwavering commitment to excellence has enabled us to guide numerous clients to success in both the Freezone and Mainland sectors."/>
+                                    <CardItem icon={icon_3} title="Purpose and Goals"
+                                              desc="Our purpose is simple yet powerful – to transform your vision into reality. We understand the challenges and complexities involved in establishing and growing a business in the vibrant economic landscape of the Emirates. Our goal is to provide tailored solutions that cater to your specific needs, ensuring your business thrives and navigates the ever-evolving market dynamics."/>
                                 </div>
                             </div>
                             <Image src={shape} alt="shape" className="lazy-img shapes shape_01"/>

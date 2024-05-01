@@ -6,10 +6,13 @@ import icon_2 from '@/assets/images/icon/icon_82.svg';
 import icon_3 from '@/assets/images/icon/icon_83.svg';
 import {IFreezoneProcessStep} from "@/data/freezone-data";
 
+import document_icon from "@/assets/images/icon/icon_81.svg";
+
 type IProp = {
   steps: IFreezoneProcessStep[];
+  requiredDocuments?: boolean;
 }
-const FreezoneDetailsSteps = ({steps}: IProp) => {
+const FreezoneDetailsSteps = ({steps, requiredDocuments = false}: IProp) => {
   return (
       <div className="row">
         {
@@ -18,7 +21,7 @@ const FreezoneDetailsSteps = ({steps}: IProp) => {
                 <div className={`card-style-sixteen text-center mt-40 md-mt-20 ${(!!index) ? 'arrow' : ''}`}>
                   <div className="icon m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
                     <Image
-                        src={step.icon}
+                        src={step.icon || document_icon}
                         alt="icon"
                         className="lazy-img"
                     />

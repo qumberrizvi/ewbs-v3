@@ -7,6 +7,7 @@ import RakezBanner from '@/assets/images/media/rakez-freezone-banner.png';
 import ShamsBanner from '@/assets/images/media/shams-freezone-banner.png';
 import AmcBanner from '@/assets/images/media/amc-freezone-banner.png';
 import DubaiBanner from '@/assets/images/media/dubai-freezone-banner.png';
+import SpcBanner from '@/assets/images/media/spc-banner.png';
 import IfzaGallery1 from '@/assets/images/gallery/ifza-gallery-1.png';
 import IfzaGallery2 from '@/assets/images/gallery/ifza-gallery-2.png';
 import IfzaGallery3 from '@/assets/images/gallery/ifza-gallery-3.png';
@@ -22,6 +23,9 @@ import AmcGallery3 from '@/assets/images/gallery/amc-gallery-3.png';
 import DubaiGallery1 from '@/assets/images/gallery/dubai-freezone-gallery-1.png';
 import DubaiGallery2 from '@/assets/images/gallery/dubai-freezone-gallery-2.png';
 import DubaiGallery3 from '@/assets/images/gallery/dubai-freezone-gallery-3.png';
+import SpcGallery1 from '@/assets/images/gallery/spc-gallery-1.png';
+import SpcGallery2 from '@/assets/images/gallery/spc-gallery-2.png';
+import SpcGallery3 from '@/assets/images/gallery/spc-gallery-3.png';
 
 type IFreezoneOverview = {
     title: string;
@@ -30,7 +34,7 @@ type IFreezoneOverview = {
 export type IFreezoneProcessStep = {
     title: string;
     description: string;
-    icon: StaticImageData;
+    icon?: StaticImageData;
 }
 type IFreezoneProcess = {
     title: string;
@@ -48,6 +52,20 @@ type IFreezonePackageSection = {
     description: string;
     packages: IFreezonePackage[];
 }
+type IFreezoneRequiredDocuments = {
+    title: string;
+    overview: {
+        title: string;
+        descriptions: string[];
+    };
+    documentsList: {
+        descriptions: string[];
+        list: {
+            title: string;
+            description: string;
+        }[];
+    }
+}
 export type IFreezone = {
     title: string;
     slug: string;
@@ -57,6 +75,7 @@ export type IFreezone = {
     overview: IFreezoneOverview;
     process: IFreezoneProcess;
     packageSection?: IFreezonePackageSection;
+    requiredDocuments?: IFreezoneRequiredDocuments;
 }
 export const freezoneData: IFreezone[] = [
     {
@@ -568,6 +587,8 @@ export const freezoneData: IFreezone[] = [
         title: "Setup Your Business In SPC Freezone",
         slug: "spc",
         zoneName: "SPC Freezone",
+        banner: SpcBanner,
+        gallery: [SpcGallery1, SpcGallery2, SpcGallery3],
         overview: {
             title: "Start your business today in SPC Freezone",
             descriptions: [

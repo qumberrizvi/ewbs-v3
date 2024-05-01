@@ -65,7 +65,8 @@ const AboutUsPage = () => {
                     {/* partner logo end */}
 
                     {/* team three start */}
-                    <TeamSectionThree/>
+                    <TeamSectionThree
+                        description={`Behind EWBS Excellence Business Services stands a diverse team of industry professionals who bring years of experience and expertise to the table. Our team consists of dedicated individuals passionate about delivering exceptional services and achieving outstanding results. With a deep understanding of the Emirates' business environment, regulations, and market nuances, we are well-equipped to guide our clients through their journey of expansion and growth.`}/>
                     {/* team three end */}
 
                     {/* fancy banner three start */}

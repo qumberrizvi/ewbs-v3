@@ -32,6 +32,20 @@ type IMainlandPackageSection = {
     description: string;
     packages: IMainlandPackage[];
 }
+type IMainlandRequiredDocuments = {
+    title: string;
+    overview: {
+        title: string;
+        descriptions: string[];
+    };
+    documentsList: {
+        descriptions: string[];
+        list: {
+            title: string;
+            description: string;
+        }[];
+    }
+}
 export type IMainland = {
     title: string;
     slug: string;
@@ -41,6 +55,7 @@ export type IMainland = {
     overview: IMainlandOverview;
     process: IMainlandProcess;
     packageSection?: IMainlandPackageSection;
+    requiredDocuments?: IMainlandRequiredDocuments;
 }
 
 export const mainlandData: IMainland[] = [
@@ -149,6 +164,32 @@ export const mainlandData: IMainland[] = [
                     ],
                 },
             ]
-        }
+        },
+        requiredDocuments: {
+            title: "REQUIRED DOCUMENT FOR MAINLAND COMPANIES",
+            overview: {
+                title: "Documents Required for Mainland Companies",
+                descriptions: [
+                    "It has never been easier to start a business in the U.A.E. With EWBS; it is no longer a source of concern or delay. If you have decided to register with EWBS, our team of specialists is ready to provide you with the best possible assistance and guide you through the entire process of establishing a successful business. We provide quick registration and document verification. We always try to keep our clients one step ahead of the game regarding company formation."
+                ],
+            },
+            documentsList: {
+                descriptions: ["We offer convenient virtual help 24 hours a day, seven days a week, to assure your safety and comfort during the process. Our techniques for documenting are adaptable and straightforward."],
+                list: [
+                    {
+                        title: "N.O.C. Residents of the United Arab Emirates",
+                        description: "If you are a U.A.E. resident, a No Objection Certificate from your sponsor is required; otherwise, if you are on a tourist or visitor visa, no N.O.C. is required.",
+                    },
+                    {
+                        title: "Copies of Passports and Visas",
+                        description: "The shareholder and the manager must give copies of their passports and visas.",
+                    },
+                    {
+                        title: "Information about Yourself",
+                        description: "The Company’s manager and shareholder may be asked to give personal information.",
+                    },
+                ],
+            },
+        },
     },
 ];

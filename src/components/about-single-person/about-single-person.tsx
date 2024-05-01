@@ -15,7 +15,7 @@ const AboutSinglePerson = () => {
                         </div>
 
                         <h4 className="mt-35 lg-mt-10">Visionary Leadership & Proven Success in Business Growth</h4>
-                        <p className="text-lg mb-30">Mr. Jafar Abbas is the CEO of EWBS Excellence
+                        <p className="text-lg mb-30">Indian Businessman Mr. Jafar Abbas is the CEO of EWBS Excellence
                             Business Services, a trusted advisor guiding entrepreneurs and startups through all stages
                             of the business lifecycle, from ideation to execution and expansion. With over 10 years of
                             experience in business consulting, Mr. Jafar leverages his expertise in strategic planning,

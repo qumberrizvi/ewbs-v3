@@ -13,9 +13,10 @@ import TeamSectionThree from "@/components/team/team-section-three";
 
 type IProp = {
     data: IFreezone | IMainland;
+    requiredDocuments?: boolean;
 }
 
-function FreezoneMainlandPackagesContactWrapper({data}: IProp) {
+function FreezoneMainlandPackagesContactWrapper({data, requiredDocuments = false}: IProp) {
     const [selectedPackage, setSelectedPackage] = useState<number | null>(null);
 
     // noinspection HtmlUnknownAnchorTarget
@@ -24,7 +25,7 @@ function FreezoneMainlandPackagesContactWrapper({data}: IProp) {
             <div className="pricing-section pt-0 pt-lg-4 lg-pb-80">
                 <div className="container">
                     {
-                        (data.packageSection) && (
+                        (data.packageSection && !requiredDocuments) && (
                             <>
                                 <div className="row align-items-center">
                                     <div className="col-lg-7 text-center text-lg-start">
@@ -43,7 +44,7 @@ function FreezoneMainlandPackagesContactWrapper({data}: IProp) {
                         <div className="row align-items-center justify-content-end">
                             <div className="col-lg-6">
                                 {
-                                    (data.packageSection) ?
+                                    (data.packageSection && !requiredDocuments) ?
                                         (
                                             <h2>
                                                 Want a <span>custom pricing</span> plan for your business?

@@ -5,15 +5,6 @@ const menu_data: IMenu[] = [
         id: 1,
         link: '/',
         title: 'Home',
-        /*dropdown:true,
-        dropdown_menus:[
-          {link:'/',title:'Finance'},
-          {link:'/home-2',title:'Business Consultancy'},
-          {link:'/home-3',title:'Banking'},
-          {link:'/home-4',title:'Payment Solution'},
-          {link:'/home-5',title:'Digital Agency'},
-          {link:'/home-6',title:'Marketing'},
-        ]*/
     },
     {
         id: 2,
@@ -22,6 +13,7 @@ const menu_data: IMenu[] = [
         dropdown: true,
         dropdown_menus: [
             {link: '/mainland/dubai', title: 'Dubai Mainland'},
+            {link: '/mainland/dubai/required-documents', title: 'Required Documents'},
         ],
     },
     {
@@ -83,25 +75,11 @@ const menu_data: IMenu[] = [
         id: 6,
         link: '/blog',
         title: 'Blog',
-        /*dropdown:true,
-        dropdown_menus:[
-          {link:'/blog',title:'Blog List'},
-          {link:'/blog-grid',title:'Blog Grid'},
-          {link:'/post',title:'Blog Details'},
-        ]*/
     },
     {
         id: 7,
         link: '/about-us',
         title: 'About Us',
-        /*dropdown:true,
-        dropdown_menus:[
-          {link:'/shop',title:'Shop'},
-          {link:'/shop-details',title:'Shop Details'},
-          {link:'/cart',title:'Cart'},
-          {link:'/wishlist',title:'Wishlist'},
-          {link:'/checkout',title:'Checkout'},
-        ]*/
     },
     {
         id: 8,
