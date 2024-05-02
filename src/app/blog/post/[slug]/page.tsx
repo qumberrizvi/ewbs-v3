@@ -8,14 +8,16 @@ import blog_bg from "@/assets/images/media/img_32.jpg";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import BlogDetailsArea from "@/components/blogs/blog-details/blog-details-area";
 import shape from "@/assets/images/shape/shape_35.svg";
-import blog_data from "@/data/blog-data";
+import {fetchCategories, fetchPost, fetchPosts} from "@/actions/blog-actions";
 
 export const metadata: Metadata = {
   title: "Blog Details Page",
 };
 
-const BlogDetailsPage = ({ params }: { params: { slug: string } }) => {
-  const blog = blog_data.find((b) => b.slug === params.slug)!;
+const BlogDetailsPage = async ({ params }: { params: { slug: string } }) => {
+  const blog = await fetchPost(params.slug);
+  const recentPosts = await fetchPosts(1, 2);
+  const categories = await fetchCategories();
   return (
     <Wrapper>
       <div className="main-page-wrapper">
@@ -36,7 +38,7 @@ const BlogDetailsPage = ({ params }: { params: { slug: string } }) => {
 
           {/* blog details area start */}
           {blog ? (
-            <BlogDetailsArea blog={blog} />
+            <BlogDetailsArea blog={blog} recentPosts={recentPosts} categories={categories} />
           ) : (
             <div className="container">
               <div className="mt-80 mb-80 text-center">

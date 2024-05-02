@@ -1,20 +1,22 @@
 import React from "react";
-import { IBlog } from "@/types/blog-d-t";
 import Link from "next/link";
+import {Post} from "@/types/post";
+import {getImageUrl} from "@/utils/utils";
 
-const BlogListItem = ({ blog }: { blog: IBlog }) => {
+const BlogListItem = ({ blog }: { blog: Post }) => {
+
   return (
     <article className="blog-meta-two style-two mb-50 lg-mb-40">
       <figure
         className="post-img position-relative d-flex align-items-end m0"
-        style={{ backgroundImage: `url(${blog.img.src})` }}
+        style={{ backgroundImage: `url(${getImageUrl(blog.image)})` }}
       >
         <Link href={`/blog/post/${blog.slug}`} className="stretched-link date tran3s">
-        {blog.date.split(" ")[0]} {blog.date.split(" ")[1]}
+        {new Date(blog.created_at).toLocaleString('en-US', {year: 'numeric', month: 'long', day: '2-digit'})}
         </Link>
       </figure>
       <div className="post-data">
-        <div className="post-info">{blog.post_info}</div>
+        <div className="post-info">{blog.category?.name}</div>
         <div className="d-flex justify-content-between align-items-center flex-wrap">
           <Link href={`/blog/post/${blog.slug}`} className="blog-title">
             <h4>{blog.title}</h4>

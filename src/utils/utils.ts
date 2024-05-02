@@ -15,3 +15,8 @@ export const calculateDiscountedPrice = (price:number, discount:number) => {
 export const capitalizeFirstLetter = (string: string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
 };
+
+export const getImageUrl = (url?: string) => {
+  const storageURI = process.env.STORAGE_URL || 'https://blog.ewbsbusiness.ae/admin/storage/';
+  return `${storageURI}/${url || ''}`;
+}

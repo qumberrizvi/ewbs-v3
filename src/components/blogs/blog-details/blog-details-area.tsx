@@ -1,10 +1,18 @@
 import React from "react";
 // internal
 import BlogSidebar from "../blog-sidebar";
-import {IBlog} from "@/types/blog-d-t";
+import {Post} from "@/types/post";
+import {getImageUrl} from "@/utils/utils";
+import {Paginator} from "@/types/paginator";
+import {Category} from "@/types/category";
 
-const BlogDetailsArea = ({blog}: { blog: IBlog }) => {
-    const {date, title, post_info, img, body} = blog || {};
+const BlogDetailsArea = ({blog, recentPosts, categories}: {
+    blog: Post,
+    recentPosts?: Paginator<Post>,
+    categories?: Paginator<Category>
+}) => {
+    const {created_at, title, image, body} = blog || {};
+
     return (
         <div className="blog-details position-relative mt-150 lg-mt-80 mb-150 lg-mb-80">
             <div className="container">
@@ -13,12 +21,15 @@ const BlogDetailsArea = ({blog}: { blog: IBlog }) => {
                         <article className="blog-meta-two style-two">
                             <figure
                                 className="post-img position-relative d-flex align-items-end m0"
-                                style={{backgroundImage: `url(${img.src})`}}
+                                style={{backgroundImage: `url(${getImageUrl(image)})`}}
                             >
-                                <div className="date">{date}</div>
+                                <div className="date">{new Date(created_at).toLocaleString('en-US', {
+                                    year: 'numeric',
+                                    month: 'long',
+                                    day: '2-digit'
+                                })}</div>
                             </figure>
                             <div className="post-data">
-                                <div className="post-info">{post_info}</div>
                                 <div className="blog-title">
                                     <h4>{title}</h4>
                                 </div>
@@ -82,7 +93,7 @@ const BlogDetailsArea = ({blog}: { blog: IBlog }) => {
 
                     <div className="col-lg-3 col-md-8">
                         {/* blog sidebar start */}
-                        <BlogSidebar/>
+                        <BlogSidebar recentPosts={recentPosts} categories={categories}/>
                         {/* blog sidebar end */}
                     </div>
                 </div>
