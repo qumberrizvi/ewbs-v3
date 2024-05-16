@@ -8,6 +8,7 @@ import {SpeedInsights} from "@vercel/speed-insights/next"
 import {QuoraPixel} from "@/components/libraries/quora-pixel";
 import {LeadFeeder} from "@/components/libraries/lead-feeder";
 import {SenseAi} from "@/components/libraries/sense-ai";
+import {MetaPixel} from "@/components/libraries/meta-pixel";
 
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default function RootLayout({
         <SpeedInsights/>
         <QuoraPixel/>
         <LeadFeeder/>
+        <MetaPixel/>
         </body>
         </html>
     );
